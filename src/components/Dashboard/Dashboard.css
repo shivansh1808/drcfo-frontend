@@ -1,0 +1,24 @@
+.dashboard_outlet {
+  position: absolute;
+  left: 20vw;
+  top: 0px;
+  background: #f6f6f7;
+  height: 100vh;
+  width: 80vw;
+  overflow: scroll;
+}
+.dashboard_sidebar_navigation {
+  background: #f6f6f7;
+}
+@media only screen and (max-width: 850px) and (min-width: 760px) {
+  .dashboard_outlet {
+    left: 24vw;
+    width: 76vw;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 850px) {
+  .dashboard_outlet {
+    left: 24vw;
+    width: 76vw;
+  }
+}

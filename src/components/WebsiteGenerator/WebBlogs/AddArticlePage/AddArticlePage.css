@@ -1,0 +1,43 @@
+.add_article_page {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.add_article_page h1 {
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  color: #686868;
+  margin-bottom: 8vh;
+}
+.add_article_page p {
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  color: #194af5;
+  margin-bottom: 8vh;
+  margin-top: 2vh;
+  cursor: pointer;
+}
+.add_article_box {
+  height: 25vh;
+  width: 20vw;
+  background: #d9d9d9;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.add_article_page button {
+  background: #194af5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 7px;
+  width: 20%;
+  font-weight: 500;
+  font-size: 1rem;
+}

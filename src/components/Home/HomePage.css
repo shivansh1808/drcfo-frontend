@@ -1,0 +1,10 @@
+.homepage {
+  background: #ecf6ff;
+  /* height: 100vh; */
+  position: relative;
+}
+.top_corner_image {
+  position: absolute;
+  width: 400px;
+  /* top: 25px; */
+}

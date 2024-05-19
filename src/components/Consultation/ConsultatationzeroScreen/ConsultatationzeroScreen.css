@@ -1,0 +1,38 @@
+.ConsultatationzeroScreen_image {
+  width: 15em;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2em;
+}
+
+.ConsultatationzeroScreen_image img {
+  max-width: 100%;
+  text-align: center;
+}
+.ConsultatationzeroScreen {
+  background: #fff;
+  padding: 5em;
+  margin: 5vw auto;
+  width: 70%;
+  height: auto;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+.ConsultatationzeroScreen h1 {
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 39px;
+  text-align: center;
+  color: #232526;
+  margin-bottom: 20px;
+}
+.ConsultatationzeroScreen p {
+  width: 60%;
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+  max-width: 500px;
+  margin: auto;
+}

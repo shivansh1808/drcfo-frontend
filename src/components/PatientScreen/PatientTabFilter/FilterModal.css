@@ -1,0 +1,264 @@
+.filter_modal {
+  background-color: #fff;
+  width: 25vw;
+  max-height: 80vh;
+  position: relative !important;
+  padding: 0.5vw;
+  z-index: 10;
+}
+
+.filter_modal h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.1vw;
+  line-height: 19px;
+  color: #000;
+  width: 80%;
+  margin-left: 1vw;
+  margin-bottom: 0.5vh;
+  padding-top: 10px;
+}
+.Clinic_filter_header_label {
+  padding-bottom: 15px !important;
+}
+
+.filter_header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1vh;
+}
+.filter_header svg {
+  margin-right: 10px;
+}
+.filter_header p {
+  margin-bottom: 0;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4vw;
+  color: #325ef6;
+}
+.patient_tab_filter_reset_cta {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1vw;
+  color: #325ef6 !important;
+  margin-top: 1vw;
+}
+.light {
+  margin-left: 1vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  max-width: 80%;
+}
+.request_filter_checkbox_input {
+  justify-content: space-evenly !important;
+}
+.light {
+  --primary: hsl(250, 100%, 44%);
+  --other: hsl(0, 0%, 14%);
+}
+.light label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 20px 12px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* input */
+.light input {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.design {
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--other);
+  margin-right: 14px;
+  position: relative;
+}
+
+.design::before,
+.design::after {
+  content: "";
+  display: block;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  position: absolute;
+  transform: scale(0);
+  transform-origin: center center;
+}
+
+.design:before {
+  background: var(--other);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.design::after {
+  background: var(--primary);
+  opacity: 1;
+  transition: 0.6s;
+}
+
+/* .text */
+.light .text {
+  font-size: 0.9vw;
+  line-height: 15px;
+  color: #000000;
+  font-weight: 500;
+  /* width: 90%; */
+  min-width: 110px;
+}
+
+/* checked state */
+.light input:checked + .design::before {
+  opacity: 1;
+  transform: scale(0.6);
+}
+
+/* other states */
+.light input:hover + .design,
+.light input:focus + .design {
+  border: 1px solid var(--primary);
+}
+
+.light input:hover + .design:before,
+.light input:focus + .design:before {
+  background: var(--primary);
+}
+
+.light input:hover ~ .text {
+  color: var(--primary);
+}
+
+.light input:focus + .design::after,
+.light input:active + .design::after {
+  opacity: 0;
+  transform: scale(2.6);
+}
+
+.category_filter {
+  width: 80%;
+  margin-left: 2vw;
+  display: grid;
+  grid-template-columns: 52% 40%;
+  align-items: center;
+  justify-items: center;
+  /* background: rgba(0,0,0,0.1); */
+}
+/* The category_container */
+.category_container {
+  width: 100%;
+  /* min-width: 180px; */
+
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  position: relative;
+  padding-left: 1.5vw;
+  margin-bottom: 1.5vw;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1vw;
+  letter-spacing: 0.01em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.category_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  left: 0%;
+  top: 25%;
+  width: 12px;
+  height: 12px;
+  border: 0.5px solid #000;
+}
+
+.category_container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.category_container input:checked ~ .checkmark {
+  background-color: #100db1;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.category_container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.category_container .checkmark:after {
+  left: 3px;
+  width: 5px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.filter_apply_btn {
+  text-align: center;
+}
+.filter_apply_btn button {
+  width: 90%;
+  border: none;
+  padding: 1.2vw;
+  margin: 2vh 0 2vh 0;
+  background: #e6ebff;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5vw;
+  line-height: 24px;
+  color: #325ef6;
+}
+.select_date_filter_button {
+  background: #ffffff;
+  border: 1px solid #e9e9e9;
+  font-weight: 500;
+  font-size: 1vw;
+  letter-spacing: 0.01em;
+  color: #cecece;
+  padding: 7px;
+  /* width: 130px; */
+  margin: 1vh 0 1vh 1vw;
+}
+.select_date_filter_button svg {
+  margin-right: 5px;
+}
+
+@media (max-width: 1200px) {
+  .category_filter {
+    grid-template-columns: 60% 50%;
+  }
+}

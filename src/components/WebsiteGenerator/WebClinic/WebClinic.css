@@ -1,0 +1,63 @@
+.WebClinic_tabs {
+  padding: 15px 10px;
+  padding-bottom: 0.2vw;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: content-box;
+  position: relative;
+  font-weight: 500;
+  font-size: 1.2vw;
+  color: #000;
+  margin-right: 5vw;
+}
+
+.WebClinic_active-tabs {
+  border-bottom: 2px solid #194af5 !important;
+}
+
+.WebClinic_content_tab {
+  width: 100%;
+  display: none;
+  /* background-color: pink; */
+}
+
+.WebClinic_active_content {
+  display: block;
+}
+
+.web_clinic_tab_content {
+  width: 50%;
+  margin: auto;
+}
+.clinic_preview {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: auto;
+}
+.clinic_preview_button1 {
+  background: #ffffff;
+  border: 3px solid #194af5;
+  border-radius: 4px;
+  color: #194af5;
+  font-weight: 500;
+  padding: 7px;
+  width: 30%;
+}
+.clinic_preview_button2 {
+  background: #194af5;
+  border: 3px solid #194af5;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  padding: 7px;
+  width: 30%;
+}
+.clinic_preview_header {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 22px;
+  text-align: center;
+  color: #686868;
+  margin: 2vh 0 1vh 0;
+}

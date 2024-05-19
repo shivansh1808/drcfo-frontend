@@ -1,0 +1,234 @@
+.login_screen {
+  background: linear-gradient(
+    /* linear, left top, right bottom, */ /* 46.91deg,  */ 120deg,
+    #eef7ff 8.85%,
+    rgba(238, 247, 255, 0) 40%,
+    /* 66.72%, */ rgba(238, 247, 255, 0) -100% /* 88.22% */
+  );
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.login_form {
+  margin-top: 10vh;
+  margin-left: 0;
+}
+.login_logo {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  max-width: 6vw;
+}
+
+.login_form_header {
+  font-weight: 700;
+  font-size: 2vw;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.login_sub_heading {
+  font-weight: 500;
+  font-size: 1.3vw;
+  line-height: 27px;
+  letter-spacing: 0.04em;
+  color: #b7b7b7;
+  margin-bottom: 3vw;
+}
+.number_input {
+  padding: 0.8vw;
+  border: 1px solid #e6ebed;
+  border-radius: 4px;
+  /* background: url("../../assets/images/login_user.png") no-repeat; */
+  /* background-size: 5%; */
+  /* background-position: 1.2vw 0.8vw; */
+  /* padding-left: 4vw; */
+  width: 80%;
+  margin-bottom: 4vh;
+  background-color: #fff;
+  outline: none;
+}
+
+.login_btn {
+  background: #194af5;
+  border: 1px solid #e6ebed;
+  border-radius: 4px;
+  font-size: 1.2vw;
+  line-height: 1.6vw;
+  cursor: pointer;
+  text-align: center;
+  color: #ffffff;
+  width: 80%;
+  padding: 0.7vw;
+  margin-bottom: 1vw;
+}
+
+.login_btn button:active {
+  /* box-shadow: 0px 4px 8px rgba(darken(dodgerblue, 30%)); */
+  transform: scale(0.99);
+}
+.login_btn2 {
+  background: #194af5;
+  border: 1px solid #e6ebed;
+  border-radius: 4px;
+  font-size: 1.2vw;
+  line-height: 1.6vw;
+  cursor: pointer;
+  text-align: center;
+  color: #ffffff;
+  width: 70%;
+  padding: 0.7vw;
+  margin-bottom: 1vw;
+}
+
+.login_btn2 button:active {
+  /* box-shadow: 0px 4px 8px rgba(darken(dodgerblue, 30%)); */
+  transform: scale(0.99);
+}
+
+.number_input::placeholder {
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #7d818b;
+}
+
+.divider {
+  overflow: hidden;
+  position: relative;
+}
+.divider h1 {
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 24px;
+  color: #545b74;
+}
+.divider h1:before,
+.divider h1:after {
+  background-color: #e6ebed;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  vertical-align: middle;
+  width: 30%;
+  position: relative;
+}
+
+.divider h1:before {
+  right: 20px;
+  margin-left: 8%;
+}
+
+.divider h1:after {
+  left: 20px;
+}
+.google_btn button {
+  background-color: #fff;
+  border: 1px solid #d5d5d5;
+  border-radius: 4px;
+  width: 80%;
+  text-align: center;
+  padding: 0.8vw;
+  font-weight: 500;
+  font-size: 1.5vw;
+  color: #232526;
+  margin-top: 1vw;
+}
+.google_btn button:active {
+  transform: scale(0.99);
+}
+
+.login_banner {
+  padding-bottom: 50px;
+}
+.login_banner img {
+  max-width: 100%;
+}
+.login_desc {
+  font-weight: 500;
+  font-size: 1.2vw;
+  text-align: center;
+  color: #b7b7b7;
+}
+.resend_btn {
+  /* background-color: red; */
+  color: gray;
+  width: 80%;
+  font-size: 15px;
+  margin: 0;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.resend {
+  color: gray;
+  cursor: auto;
+}
+.resend.active {
+  color: #194af5;
+  background: transparent;
+  cursor: pointer;
+}
+/* Loader CSS  Start*/
+.lds-ellipsis {
+  display: block;
+  position: relative;
+  height: 20px;
+  width: 20%;
+  margin: auto;
+  /* background-color: red; */
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 35%;
+  margin-left: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #d5d5d5;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+/* Loader CSS End*/

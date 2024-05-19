@@ -1,0 +1,70 @@
+.appt_card {
+  background: #f7f7f7;
+  border-radius: 4px;
+  position: relative;
+  min-width: 380px;
+  height: 110px;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slot_edit_card {
+  background: #e6ebff;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22px;
+  color: #194af5;
+  padding: 0.2vw 1.5vw;
+  display: block;
+  border: none;
+  /* width: 90px; */
+}
+.slot_delete_card {
+  background: #ffe3e3;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22px;
+  color: #ff5555;
+  padding: 0.2vw 1vw;
+  display: block;
+  border: none;
+  /* width: 90px; */
+  margin-top: 15px;
+}
+.appt_time {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+.appt_days ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+.appt_days ul li {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: #848484;
+  margin-right: 8px;
+}
+.appt_slot-num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.15vw 1.2vw;
+  color: #e8b983;
+  background-color: #ffedd9;
+}
+@media (max-width: 1200px) {
+  /* .appt_card {
+    width: 70%;
+  } */
+}

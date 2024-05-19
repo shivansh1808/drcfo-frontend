@@ -1,0 +1,103 @@
+.sidenav {
+  position: absolute;
+  left: 0px;
+  top: 80px;
+  width: 16vw;
+  height: 100vh;
+  background: #ffffff;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.04);
+}
+.sidenav_container {
+  width: 16vw;
+  height: 100vh;
+}
+.sidenav_brand {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f8f8;
+  box-shadow: 8px 4px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+  margin: 20px;
+  /* background-color: red; */
+}
+.sidenav_user_image {
+  height: 3.5em;
+  /* border-radius: 50%; */
+  /* border: 1.5px solid #194af5; */
+  margin-right: 15px;
+}
+.side_brand_name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  margin-bottom: 2px;
+}
+.side_brand_age {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #a9abad;
+}
+.side_brand_number {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 0;
+  line-height: 30px;
+}
+.medical_history_cta {
+  background: #e6ebff;
+  border-radius: 25.5px;
+  border: none;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  color: #194af5;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+.bottom_bar {
+  border-top: 1px solid #e6ebed;
+  margin: 20px 20px;
+}
+.sidebar_nav_item {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px auto;
+  text-decoration: none;
+  color: #000;
+}
+.sidebar_nav_item a {
+  text-decoration: none;
+  color: inherit;
+}
+.sidebar_nav_item:hover {
+  color: #194af5;
+  background: #e6ebff;
+}
+.sidebar_nav_item.active {
+  color: #194af5;
+  background: #e6ebff;
+}
+.walkin_in_chip {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  color: #5a6472;
+  background: #e6ebff;
+  border-radius: 2em;
+  padding: 4px 8px;
+}

@@ -1,0 +1,16 @@
+.QuestionAnswerBox_header {
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #686868;
+  margin: 30px 0;
+}
+.addQueston_box_cta {
+  color: #194af5;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  text-align: end;
+}

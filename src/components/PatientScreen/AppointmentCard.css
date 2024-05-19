@@ -1,0 +1,368 @@
+.appointment_card {
+	background: #fff;
+	padding: 1vw;
+	margin: 1vw;
+	position: relative;
+}
+.appointment_new_label {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0.3vw;
+	width: 4.5vw;
+	font-size: 0.8vw;
+	font-weight: 500;
+	background: #ffedd9;
+	color: #e3a55b;
+	z-index: 1;
+}
+.appointment_card_demo {
+	background: #fff;
+	padding: 1.2em;
+	margin: 10px 20px;
+	position: relative;
+	min-width: 500px;
+}
+.top_corner_label {
+	position: absolute;
+	padding: 5px 20px;
+	top: 0;
+	right: 0;
+	background: #ffedd9;
+	border-radius: 0px 0px 0px 3px;
+}
+.top_corner_label p {
+	margin-bottom: 0;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 18px;
+	color: #e3a55b;
+}
+.appointment_card_header {
+	background: rgba(239, 239, 239, 0.5);
+	padding: 1vw;
+	border-left: 10px solid #ff8e8e;
+	position: relative;
+}
+.appointment_card_name {
+	display: inline-block;
+	margin-bottom: 0px;
+	margin-right: 30px;
+	font-weight: 500;
+	font-size: 1.1em;
+	line-height: 27px;
+	color: #000000;
+	word-wrap: break-word;
+	width: 180px;
+	white-space: normal;
+	/* background-color: royalblue; */
+}
+.appointmnet_type_label {
+	background: #e6ebff;
+	border-radius: 13px;
+	font-weight: 500;
+	font-size: 0.8vw;
+	line-height: 15px;
+	color: #5a6472;
+	display: inline-block;
+	padding: 4px 10px;
+	margin-bottom: 0px;
+	margin-right: 50px;
+}
+.general_Meical_certificate_cta {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 0.8vw;
+	line-height: 1vw;
+	border: none;
+	background-color: transparent;
+	text-decoration-line: underline;
+	text-underline-offset: 3px;
+	color: #009065;
+	display: inline-block;
+	width: 100%;
+	text-align: right;
+}
+.appointment_card_details {
+	margin-top: 10px;
+}
+.appointment_card_details h4 {
+	display: inline-block;
+	margin-right: 40px;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1vw;
+	line-height: 22px;
+	color: #7d818b;
+}
+.appointment_card_details_value {
+	color: #616161;
+	font-weight: 500;
+	/* background-color: rebeccapurple; */
+	width: 30px;
+	display: inline-block;
+}
+.appointment_card_details_phone_value {
+	color: #616161;
+	width: 130px;
+	display: inline-block;
+	font-weight: 500;
+}
+.appointment_booking_details {
+	margin-top: 1.5vh;
+	padding-bottom: 1vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.appointment_confirmed_booking_details {
+	padding-bottom: 20px;
+	margin-top: 1vh;
+}
+
+.myappointment--card--detials--content h2 {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1vw;
+	line-height: 22px;
+	color: #7d818b;
+}
+.myappointment--card--detials--content--time svg {
+	margin-right: 5px;
+}
+.myappointment--card--detials--content--time {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.1vw;
+	line-height: 20px;
+	color: #48484b;
+	margin: 0.5vw 0;
+}
+.appointment_card_buttons {
+	border-top: 1px solid rgba(208, 208, 208, 0.8);
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	padding-top: 1vw;
+}
+.appointment_card_medical_history_cta {
+	background: #e6ebff;
+	border-radius: 2px;
+	padding: 0.5vw;
+	width: 30%;
+	font-weight: 500;
+	font-size: 1vw;
+	color: #194af5;
+	border: none;
+}
+.appointment_card_prescription_cta {
+	background: #e0ffb9;
+	border: none;
+	border-radius: 2px;
+	padding: 0.5vw;
+	/* width: 30%; */
+	font-weight: 500;
+	font-size: 1vw;
+	color: #519000;
+	margin-right: 20px;
+}
+/* .myappointment--card {
+  background: #fff;
+  padding: 1.2em;
+  margin: 10px 20px;
+  display: block;
+}
+
+.myappointment--card--header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.myappointment--card--header--content {
+  display: flex;
+}
+
+.myappointment--card--name {
+  font-weight: 500;
+  font-size: 17px;
+  display: block;
+  color: #000000;
+  inline-size: 13em;
+  overflow-wrap: break-word;
+}
+
+.myappointment--card--name2 {
+  font-weight: 500;
+  font-size: 17px;
+  display: block;
+  color: #000000;
+  inline-size: 15em;
+  overflow-wrap: break-word;
+}
+.myappointment--card--gender {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #7d818b;
+}
+.myappointment--card--header--detials {
+  color: #7d818b;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #7d818b;
+  display: block;
+  margin-top: 5px;
+}
+
+.myappointment--card--status {
+  border-radius: 2px;
+  border: none;
+  padding: 5px 20px;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.status--upcoming {
+  background: #f8af1f;
+  color: #ffffff;
+}
+
+.status--completed {
+  background: #e2f9d7;
+  color: #49aa19;
+}
+
+.status--cancelled {
+  background: #a61d24;
+  color: #ffffff;
+}
+
+.myappointment--card--image {
+  height: 80px;
+  margin-right: 1em;
+}
+
+.myappointment--card--detials {
+  margin-top: 1.5em;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.myappointment--card--detials--content {
+  color: #48484b;
+
+  margin: 25px 0;
+  min-width: 250px;
+}
+.myappointment--card--detials--content2 {
+  color: #48484b;
+  margin: 25px 0;
+}
+.myappointment--card--detials--content--date {
+  margin-top: 10px;
+}
+.myappointment--card--detials--lookup {
+  min-width: 250px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.next_lookupdate_header {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #7d818b;
+  margin-bottom: 10px;
+}
+.next_lookupdate {
+  margin-bottom: 0;
+}
+.appointment_booking_confirmed_text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #49aa19;
+  margin-top: 50px;
+}
+.myappointment--card--detials--content--svg {
+  height: 1em;
+  margin-right: 5px;
+}
+
+.myappointment--card--footer {
+  padding-top: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+.booking_status {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #49aa19;
+}
+.myappointment--card--footer--booking--btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.myappointment--card--footer--booking {
+  background: #e6ebff;
+  border-radius: 2px;
+  padding: 6px 20px;
+
+  border: none;
+  font-weight: 500;
+  font-size: 15px;
+  color: #194af5;
+}
+.myappointment--card--footer--modify {
+  background: none;
+  border: 1px solid #e6ebff;
+  border-radius: 2px;
+  padding: 6px 20px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #194af5;
+}
+.myappointment--card--footer--download {
+  background: none;
+  border: none;
+  padding: 6px 20px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #194af5;
+}
+.myappointment--card--footer--detials {
+  display: inline-block;
+  margin-top: 1.2em;
+  font-weight: 500;
+}
+
+.footer--confirmed {
+  color: #49aa19;
+}
+
+.footer--pending {
+  color: #f8af1f;
+}
+
+.footer--rejected {
+  color: #a61d24;
+}
+
+.footer--completed {
+  color: #194af5;
+}
+
+.footer--cancelled {
+  color: #a61d24;
+} */

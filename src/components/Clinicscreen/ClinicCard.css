@@ -1,0 +1,196 @@
+.clinic_box {
+  margin: 2vw 2vw 2vw 2vw;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  width: 55vw;
+  /* height: 36vh; */
+  /* max-width: 800px; */
+}
+.clinic_box_demo {
+  /* margin: 20px 50px; */
+  margin: 1vw 2vw;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  max-width: 800px;
+  min-height: 350px;
+}
+.clinic_box_header {
+  display: flex;
+  justify-content: space-between;
+}
+.clinic_box_header h1 {
+  font-weight: 500;
+  font-size: 1.4vw;
+  line-height: 1.2vw;
+  color: #000000;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.clinic_box_header p {
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 1vw;
+  color: #7d818b;
+  margin-bottom: 5px;
+}
+.clinic_box_header h6 {
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 1vw;
+  color: #7d818b;
+}
+.clinic_box_details {
+  display: flex;
+  margin-top: 1.4vh;
+}
+.clinic_box_detail_col_1 {
+  margin-right: 150px;
+}
+.clinic_box_details h5 {
+  font-weight: 500;
+  font-size: 1.1vw;
+  line-height: 1.2vw;
+  color: #b7b7b7;
+}
+.clinic_box_details p {
+  font-weight: 400;
+  font-size: 1.1vw;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #232526;
+  margin-bottom: 0.5vw;
+}
+.clinic_box_details h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #194af5;
+}
+.address {
+  max-width: 300px;
+}
+.address-direction {
+  color: #194af5;
+  font-weight: 600;
+  font-size: 1.1vw;
+}
+.details_view_cta {
+  background: #e6ebff;
+  border-radius: 2px;
+  border: none;
+  /* width: 180px; */
+  padding: 0.4vw 1.5vw;
+  color: #194af5;
+  font-weight: 500;
+  font-size: 1.2vw;
+}
+.details_delete_cta {
+  background: #ffe3e3;
+  border-radius: 2px;
+  border: none;
+  /* width: 180px; */
+  padding: 0.4vw 1.5vw;
+  color: #ff6767;
+  font-weight: 500;
+  font-size: 1.2vw;
+  margin-right: 1.2vw;
+}
+.ui-datepicker-clear-month {
+  position: absolute;
+  top: 9px;
+  right: 32px;
+  height: 100%;
+  line-height: 100%;
+  display: inline;
+  cursor: pointer;
+  color: red !important;
+}
+
+.dates_dropdown {
+  margin-right: 0 !important;
+  position: relative;
+}
+.date_ul {
+  position: absolute;
+  background: #ffffff;
+  padding: 10px;
+  list-style-type: none;
+  left: -0%;
+  max-width: 15vw;
+}
+.date_ul li {
+  padding: 10px;
+}
+.date_ul li:hover {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.dates_drop_btn {
+  color: #fff !important;
+  background: #4c72f7 !important;
+  border-radius: 2px !important;
+}
+.custom-calendar {
+  padding-bottom: 0px !important;
+}
+.clinic_list_wrapper_btn {
+  text-align: end;
+  max-width: 54vw;
+}
+.clinic_list_wrapper_btn button {
+  /* position: absolute;
+  right: 30%; */
+  background-color: #194af5;
+  border: none;
+  color: #fff;
+  padding: 7px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 29px;
+  color: #ffffff;
+  width: 200px;
+}
+.time_picker {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  height: 250px;
+  width: 400px;
+  position: absolute;
+  /* padding: 20px; */
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+.slot_picker_gap {
+  margin: 20px 0;
+}
+.time_picker button {
+  border: none;
+  border-radius: 4px;
+  padding: 0.4rem 1.5rem;
+  background: #e6ebff;
+  font-size: 16px;
+  color: #194af5;
+}
+.clinic_active {
+  color: #49aa19;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  min-width: 150px;
+}
+.clinic_not_active {
+  color: #000;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  min-width: 150px;
+}

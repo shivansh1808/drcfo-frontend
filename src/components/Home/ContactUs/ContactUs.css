@@ -1,0 +1,44 @@
+.Contact-Us-Head{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+letter-spacing: 0.02em;
+color: #888686;
+margin-top: 3vw !important;
+}
+#ContactUs-Container{
+background: #FFFFFF;
+box-shadow: 8px 8px 40px rgba(0, 0, 0, 0.1);
+border-radius: 20px;
+margin-bottom: 5vw;
+}
+#ContactUs-HeadName{
+ font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 45px;
+text-align: center;
+padding-top: 5vw;
+color: #545B74;
+margin-bottom: 5vw;
+}
+.Contact-Us-foot{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+letter-spacing: 0.02em;
+color: #323030;
+margin-top: 16px;
+}
+#ContactUs-Container-Bg{
+    background: linear-gradient( #ECF6FF 54.5%, #FFFFFF 55%);
+}
+#Social-Icon-div{
+    margin-top: 25px;
+    margin-bottom: 55px;
+}
+.Social-Icon-Svg{
+width: 4vw;
+}

@@ -1,0 +1,45 @@
+.WebGenManager {
+  background: #f6f6f7;
+  border-radius: 10px;
+  padding: 1em;
+}
+.WebGenManager_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+}
+.WebGenManager_header h1 {
+  font-weight: 500;
+  font-size: 1.1em;
+  letter-spacing: 0.02em;
+  color: #404040;
+  margin-bottom: 0;
+}
+.WebGenManager_header button {
+  background: #194af5;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 1em;
+  letter-spacing: 0.02em;
+  color: #fff;
+  width: 35%;
+  padding: 6px;
+  border: none;
+}
+.manage_web_tabs {
+  background-color: #fff;
+  padding: 0.8em 1.5em;
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  justify-content: space-between;
+  margin: 1em 0;
+  cursor: pointer;
+}
+.manage_web_tabs span {
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #757575;
+}

@@ -1,0 +1,12 @@
+.details_input_title {
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+.details_input {
+  font-family: Inter;
+  width: 25vw;
+  padding: 0.5vw;
+  outline: none;
+  border: 1px solid #a4a4a4;
+  border-radius: 0.2rem;
+}

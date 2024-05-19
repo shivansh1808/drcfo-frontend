@@ -1,0 +1,55 @@
+.history_modal_header svg {
+  margin-right: 0.5em;
+  color: #000;
+}
+.history_modal_header {
+  font-size: 1.1em;
+  font-weight: 500;
+  cursor: pointer;
+  width: fit-content;
+}
+.history_profile {
+  background: #f8f8f8;
+  margin: 3vh auto;
+  padding: 0.5em;
+  box-shadow: 8px 4px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+}
+.history_profile p {
+  margin-bottom: 0;
+  color: #232526;
+  font-size: 1em;
+  font-weight: 500;
+}
+.walkin {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  color: #5a6472;
+  background: #e6ebff;
+  border-radius: 2em;
+  padding: 4px 8px;
+}
+.history_modal_col_1 {
+  flex-basis: 20%;
+}
+.history_modal_col_2 {
+  flex-basis: 20%;
+}
+.history_modal_col_3 {
+  flex-basis: 30%;
+}
+.history_modal_col_4 {
+  flex-basis: 15%;
+}
+.history_modal_col_5 {
+  flex-basis: 15%;
+}
+.history_modal_view_cta {
+  color: #194af5;
+  cursor: pointer;
+}

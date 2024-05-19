@@ -1,0 +1,27 @@
+.details_add_confimation_box h1 {
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  color: #232526;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.details_add_rejected {
+  background: #e18989;
+  border-radius: 4px;
+  border: none;
+  width: 6.3rem;
+  padding: 6px;
+  color: #fff;
+  font-weight: 500;
+}
+.details_add_accepted {
+  background: #194af5;
+  opacity: 0.6;
+  border-radius: 4px;
+  border: none;
+  width: 6.3rem;
+  padding: 6px;
+  color: #fff;
+  font-weight: 500;
+}

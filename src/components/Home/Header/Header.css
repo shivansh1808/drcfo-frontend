@@ -1,0 +1,70 @@
+.header_screen {
+  /* background-color: red; */
+  height: 100vh;
+}
+.header_left {
+  /* margin-right: 10px; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 550px;
+  /* z-index: 10; */
+}
+.header_left h1 {
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 77px;
+  color: #545b74;
+}
+.header_left p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #000000;
+}
+.header_left button {
+  background: #194af5;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  border: none;
+  width: 250px;
+  font-weight: 500;
+  margin: 30px 0;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px;
+}
+.header_left h6 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 29px;
+  color: #545b74;
+}
+.header_left span {
+  color: #194af5;
+}
+
+.header_right {
+  padding-top: 70px;
+  position: relative;
+}
+.doctor_background {
+  background: url("../../../assets/images/home/home_bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 650px;
+  position: absolute;
+  left: 10%;
+  right: -5%;
+}
+.header_doctor_image {
+  width: 89%;
+  /* margin-bottom: 20px; */
+  /* margin-left: 60px; */
+  padding-left: 45px;
+}
+.margin_class {
+  /* margin-left: 20px; */
+}

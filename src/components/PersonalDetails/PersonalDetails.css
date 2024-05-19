@@ -1,0 +1,49 @@
+.detail_form_logo{
+    position: absolute;
+    top: 5%;
+    left: 4vw;
+    max-width: 5vw;
+}
+.details_screen{
+    background: linear-gradient(
+            /* linear, left top, right bottom, */
+            /* 46.91deg,  */
+            120deg,
+            #EEF7FF 8.85%,
+            rgba(238, 247, 255, 0) 40%,
+            /* 66.72%, */
+            rgba(238, 247, 255, 0) -100%
+            /* 88.22% */
+            );
+    min-height: 100vh;
+    /* display: flex; */
+    align-items: center;
+    position: relative;
+}
+.details_head{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 5vw;
+}
+.details_title{
+    margin: auto;
+    font-size: 1.6vw;
+    font-weight: 700;
+}
+.details_desc{
+    margin-top: 0.5vw;
+    font-size: 1.2vw;
+    /* letter-spacing: 0.1vw; */
+    color: #B7B7B7;
+    font-weight: 500;
+
+}
+.personal_details_form{
+    /* background: #000; */
+    margin: auto;
+    margin-top: 10vw;
+    display: grid;
+    width: 80vw;
+    grid-template-columns: 40% 40%;
+}

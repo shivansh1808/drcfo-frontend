@@ -1,0 +1,29 @@
+.features_card {
+  padding: 20px 10px;
+  max-width: 350px;
+  height: 200px;
+  margin: 20px;
+  box-shadow: 2px 2px 12px rgba(231, 244, 255, 0.63);
+  border-radius: 14px;
+}
+
+.features_card img {
+  max-width: 50px;
+  margin-right: 20px;
+}
+.features_card h1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 31px;
+  color: #545b74;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.08);
+  display: inline-block;
+  max-width: 70%;
+}
+.features_card p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  color: #545b74;
+}

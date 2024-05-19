@@ -1,0 +1,104 @@
+.clinic_details_screen h1 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #4b4b4b;
+  padding: 10px 50px;
+}
+.clinic_details_card {
+  background-color: #fff;
+  padding: 1.5vw;
+  border-radius: 8px;
+  margin: 1vw 2vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 25vw;
+  max-width: 60vw;
+}
+.clinic_details_card_left {
+  /* width: 50%; */
+  position: relative;
+  border-right: 1px solid #b5b5b5;
+  padding-right: 30px;
+}
+.clinic_details_card_left h5 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  color: #161616;
+  margin-bottom: 50px;
+}
+.clinic_details_card_left h2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #194af5;
+}
+.clinic_details_card_left h4 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #48484b;
+  margin-bottom: 30px;
+}
+.clinic_details_card_left p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.edit_btn_cta {
+  /* margin-top: 2vw; */
+  background: #e6ebff;
+  position: absolute;
+  bottom: 0;
+  border-radius: 4px;
+  border: none;
+  width: 14vw;
+  padding: 0.5vw;
+  color: #194af5;
+  font-size: 1.1vw;
+  font-weight: 600;
+}
+.all_slot_page_cross {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+}
+.all_slot_page_header {
+  color: #4b4b4b;
+  font-size: 2vw;
+  font-family: Inter;
+  font-weight: 500;
+  margin-left: 2vw;
+}
+.all_slot_page {
+  display: grid;
+  /* min-width: fit-content; */
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 4vw;
+  margin-top: 2vw;
+}
+.clinic_details_card_right {
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .clinic_details_card {
+    display: block;
+    height: 60vw;
+    max-width: 52vw;
+  }
+  .clinic_details_card_left {
+    border-right: 0px;
+    border-bottom: 1px solid #b5b5b5;
+    padding-bottom: 5vw;
+  }
+  .edit_btn_cta {
+    bottom: 2vw;
+  }
+  .clinic_details_card_right {
+    margin-top: 4vw;
+    height: 48%;
+  }
+}

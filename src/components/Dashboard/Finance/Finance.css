@@ -1,0 +1,106 @@
+.finance_container {
+  margin: 20px 50px;
+  background: #ffffff;
+  border-radius: 4px;
+  width: 90%;
+  /* padding: 50px; */
+  padding: 3vw 3vw 3vw 3vw;
+}
+.finance_wrapper {
+  display: flex;
+  align-items: center;
+}
+.bank_header {
+  font-weight: 500;
+  font-size: 1.8vw;
+  line-height: 39px;
+  margin-bottom: 20px;
+  color: #232526;
+}
+.my_accounts_cta {
+  margin-bottom: 20px;
+  color: #194af5;
+  cursor: pointer;
+  margin-left: 12em;
+}
+.finance_input_box {
+  width: 35vw;
+  /* background-color: cadetblue; */
+}
+.finance_input_box label {
+  display: block;
+  font-weight: 500;
+  font-size: 1.2vw;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #232526;
+  margin-bottom: 0.2vw;
+}
+.finance_input {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #a4a4a4;
+  border-radius: 4px;
+  margin-bottom: 2vw;
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.2vw;
+  color: #232526;
+}
+.finance_input:focus {
+  outline: 1px solid #194af5;
+}
+.finance_input::placeholder {
+  font-weight: 400;
+  font-size: 1.2vw;
+  letter-spacing: 0.02em;
+  color: #7d818b;
+}
+.finance_body {
+  text-align: center;
+  width: 30vw;
+  margin: auto;
+  margin-left: 3vw;
+  /* background: #000; */
+}
+.finance_body h5 {
+  font-weight: 700;
+  font-size: 1.2vw;
+  line-height: 24px;
+  color: #232526;
+}
+.finance_body p {
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 22px;
+  color: #000000;
+}
+
+.finance_image {
+  width: 18vw;
+  height: 20vw;
+  margin: auto;
+}
+
+.finance_image img {
+  max-width: 100%;
+}
+.add_bank_cta {
+  width: 100%;
+  background: #194af5;
+  border-radius: 4px;
+  padding: 0.5vw;
+  border: none;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin-top: 20px;
+}
+.add_bank_cta:disabled {
+  background-color: #a4a4a4;
+  color: #000;
+}
+.add_bank_cta:active {
+  transform: scale(0.99);
+}

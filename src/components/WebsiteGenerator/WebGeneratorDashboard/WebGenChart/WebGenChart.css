@@ -1,0 +1,38 @@
+.WebGenChart {
+  background: #f6f6f7;
+  border-radius: 10px;
+  padding: 1em;
+}
+.WebGenChart p {
+  font-weight: 500;
+  font-size: 1em;
+  letter-spacing: 0.02em;
+  color: #404040;
+}
+.plag_board {
+  display: flex;
+  align-items: center;
+}
+.plag_chart {
+  max-width: 11em;
+  margin-right: 50px;
+}
+
+.plag_content svg {
+  margin-right: 10px;
+}
+.plag_content p {
+  display: grid;
+  grid-template-columns: 0.8fr 3fr 1fr;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.015em;
+  color: #323232;
+  margin: 15px 0;
+}
+.plag_content span {
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  letter-spacing: -0.015em;
+  color: #323232;
+}

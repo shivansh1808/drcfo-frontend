@@ -1,0 +1,72 @@
+.query_modal {
+  padding: 20px;
+}
+.query_modal h1 {
+  font-weight: 600;
+  font-size: 22px;
+  color: #194af5;
+  margin-bottom: 30px;
+}
+.query_modal p {
+  margin-bottom: 5px;
+}
+.custom-field {
+  position: relative;
+}
+
+.custom-field .clinic_input {
+  padding: 8px;
+  width: 300px;
+  outline: none;
+  font-size: 14px;
+  background: none;
+  border: 2px solid #d7d7d7;
+  border-radius: 6px;
+}
+
+.custom-field .placeholder {
+  position: absolute;
+  transform: translateY(-50%);
+  color: #9a9a9a;
+  left: 8px;
+  padding: 0 5px;
+  top: 0;
+  font-size: 10px;
+  background: #fff;
+  opacity: 1;
+  font-weight: 500;
+}
+.query_radio_buttons {
+  flex-direction: column;
+  align-items: flex-start !important;
+}
+.query_radio_buttons label {
+  margin: 10px 0px;
+}
+.query_options {
+  margin-top: 20px;
+}
+.query_modal_buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.query_modal_cancel_buttons {
+  font-weight: 500;
+  font-size: 16px;
+  background: #d9d9d9;
+  border-radius: 3px;
+  color: #545b74;
+  width: 130px;
+  border: none;
+  padding: 10px;
+}
+.query_modal_proceed_buttons {
+  font-weight: 500;
+  font-size: 16px;
+  background: #194af5;
+  border-radius: 3px;
+  color: #fff;
+  width: 130px;
+  border: none;
+  padding: 10px;
+}

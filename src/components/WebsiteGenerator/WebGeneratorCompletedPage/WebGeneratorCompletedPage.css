@@ -1,0 +1,33 @@
+.WebGeneratorCompletedPage_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  background: #fff;
+  border-radius: 8px;
+  width: 95%;
+  margin: 20px auto;
+}
+.WebGeneratorCompletedPage_container h1 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #232526;
+  margin-top: 4rem;
+}
+.WebGeneratorCompletedPage_container img {
+  max-width: 50%;
+}
+.WebGeneratorCompletedPage_container button {
+  background: #194af5;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.2;
+  letter-spacing: 0.02em;
+  padding: 7px;
+  color: #ffffff;
+  width: 15vw;
+  border: none;
+  margin-bottom: 30px;
+}

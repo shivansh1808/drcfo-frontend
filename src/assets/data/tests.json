@@ -1,0 +1,92 @@
+[
+	{ "name": "Hemoglobin" },
+	{
+		"name": "Packed Cell Volume (PCV)",
+		"subTests": [
+			"MCB",
+			"MCH",
+			"MCSC",
+			"Red Cell Distribution with (RDW)",
+			"RBC count#"
+		]
+	},
+	{ "name": "Reticulocyte count#" },
+	{ "name": "Absolute eosinophil count#" },
+	{ "name": "Total leucocyte count#" },
+	{
+		"name": "Differential leucocyte count",
+		"subTests": [
+			"Segmented Neutrophils",
+			"Lymphocyted",
+			"Monocytes",
+			"Eosinophils",
+			"Basophils"
+		]
+	},
+	{
+		"name": "Absolute Leucocyte Count",
+		"subTests": [
+			"Neutrophils",
+			"Lymphocyted",
+			"Monocytes",
+			"Eosinophils",
+			"Basophils"
+		]
+	},
+	{ "name": "Platelet count#", "subTests": ["Mean Platelet Value"] },
+	{ "name": "CBC" },
+	{ "name": "ESR#" },
+	{ "name": "Blood grouping and Rh", "subTests": ["typing"] },
+	{ "name": "Glucose, Fasting (F), Plasma" },
+	{ "name": "Postprandial (PP)" },
+	{ "name": "HbA1c" },
+	{ "name": "Blood Sugar (Urine)" },
+	{ "name": "Glucose tolerance test (GTT)" },
+	{
+		"name": "Liver Function Test (LFT)",
+		"subTests": [
+			"Bilirubin Total",
+			"Bilirubin Direct",
+			"Bilirubin Indirect",
+			"SGPT",
+			"SGOT",
+			"GGPT"
+		]
+	},
+	{ "name": "Alkaline phosphatase" },
+	{
+		"name": "Kidney Function Test",
+		"subTests": [
+			"Total Protein",
+			"Albumim",
+			"A:G Ratio",
+			"Serum creatinine",
+			"Blood Urea",
+			"Uric Acid"
+		]
+	},
+	{ "name": "Phosphorus" },
+	{ "name": "Serum Sodium" },
+	{ "name": "Serum Potassium" },
+	{ "name": "Serum Calcium" },
+	{ "name": "Chloride" },
+	{
+		"name": "Thyroid Profile, Total, Serum",
+		"subTests": ["Free T3", "Free T4", "TSH (including for newborn screening)"]
+	},
+	{
+		"name": "Lipid Screen, Serum",
+		"subTests": [
+			"Total",
+			"Cholesterol",
+			"Triglyceride",
+			"VLDL",
+			"HDL",
+			"Non HDL",
+			"LDL"
+		]
+	},
+	{ "name": "Iron Studies, Plasma" },
+	{ "name": "Vitamin B12, Cyanocobalamin, Serum" },
+	{ "name": "Vitamin D, 25-Hydroxy, Serum" }
+]

@@ -1,0 +1,56 @@
+.WebTreatment_image_uploader_box label {
+  background: #ffffff;
+  border: 1px solid #a4a4a4;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 0;
+}
+.WebTreatment_buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+}
+.WebTreatment_buttons button {
+  background: #194af5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 7px;
+  width: 40%;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.treatment_section {
+  width: 95%;
+  margin: 20px auto;
+  font-weight: 500;
+  font-size: 18px;
+  color: #686868;
+}
+.treatments_end_page {
+  text-align: center;
+  margin: 0px 0;
+  padding: 50px 0;
+}
+.treatments_end_page p {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #686868;
+}
+.treatments_end_page button {
+  background: #194af5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 7px;
+  width: 20%;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 4vh;
+}

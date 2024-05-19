@@ -1,0 +1,16 @@
+.SuggestionCard {
+  margin: 0 15px;
+  padding: 5px 10px;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.SuggestionCard p {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  /* identical to box height */
+  letter-spacing: 0.02em;
+  color: #2e2e2e;
+}

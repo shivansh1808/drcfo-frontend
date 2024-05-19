@@ -1,0 +1,77 @@
+.chatList_screen {
+  background: #ffffff;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.04);
+  border-radius: 0.5rem;
+  padding: 20px;
+  margin: 1vw 4vw 2vw 2vw;
+}
+.chatList_screen a {
+  text-decoration: none;
+}
+.chatList_screen h1 {
+  font-weight: 500;
+  font-size: 1.7vw;
+  line-height: 29px;
+  /* identical to box height */
+  margin-bottom: 30px;
+  padding-left: 10px;
+  color: #000000;
+}
+.chat_card {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 1vw;
+  /* padding-bottom: 10px; */
+  margin-top: 20px;
+  border-radius: 5px;
+  border-bottom: 1px solid #e6ebed;
+}
+.chat_card:hover {
+  background-color: #e6ebff;
+}
+.chat_card h2 {
+  font-weight: 600;
+  font-size: 1.5vw;
+  line-height: 22px;
+  color: #232526;
+  /* margin-bottom: 0; */
+}
+.chat_card p {
+  width: 50vw;
+  font-weight: 400;
+  font-size: 1.2vw;
+  line-height: 17px;
+  color: #232526;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+.chat_card span {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  color: #b7b7b7;
+}
+.chat--card--profile {
+  font-weight: 500;
+  font-size: 1.5vw;
+  color: #5a6472;
+  background: #e6ebff;
+  border: 1px solid #f8f8f8;
+  width: 4vw;
+  height: 4vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.chat--card-time{
+  position: absolute;
+  bottom: 1vw;
+  right: 1vw;
+  color: #B7B7B7;
+  /* font-family: Inter; */
+}

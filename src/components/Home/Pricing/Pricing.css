@@ -1,0 +1,186 @@
+.pricing_wrapper {
+  background: #ecf6ff;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+  height: 50vh;
+  margin-bottom: 200px;
+}
+.pricing_wrapper h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 77px;
+  color: #545b74;
+}
+.pricing_wrapper button {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  background: #194af5;
+  border-radius: 8px;
+  padding: 10px;
+  width: 250px;
+  border: none;
+  margin-top: 20px;
+}
+.pricing_card_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.pricing_card {
+  max-width: 300px;
+  height: 220px;
+  background-color: #fff;
+  margin: 0 20px;
+  margin-top: 80px;
+  padding: 20px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+}
+.pricing_card h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+  color: #333333;
+}
+.pricing_card p {
+  padding: 0 20px;
+  padding-top: 15px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #9d9d9d;
+}
+.pricing_card span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 53px;
+  text-align: center;
+  color: #333333;
+}
+/* Pricing table start */
+.price_table {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 7em;
+  text-align: center;
+}
+.price_table button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+  background: #194af5;
+  border-radius: 8px;
+  border: none;
+  padding: 15px;
+  width: 300px;
+  margin-top: 4em;
+}
+.svg_tick {
+  width: 25px;
+  color: #779fe5;
+}
+
+.price_table table {
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+}
+.price_table thead th {
+  border: 0.1px solid #c5c5c5;
+  padding: 10px 20px;
+}
+.price_table thead th:nth-child(1) {
+  border: none !important;
+}
+.price_table thead th:nth-child(2) {
+  border: none !important;
+}
+.price_table thead th h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #666666;
+}
+.price_table thead th p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+  color: #333333;
+}
+.price_table tbody td {
+  background: #fff;
+  border: 0.1px solid #c5c5c5;
+  text-align: center;
+  padding: 0.9em 1em;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #779fe5;
+}
+.price_table tbody th {
+  padding: 0.9em 1em;
+  background: #f3f3f3;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #717171;
+}
+.price_table tbody th:nth-child(1) {
+  width: 100px !important;
+  border-top: 0.1px solid #c5c5c5;
+  border-left: 0.1px solid #c5c5c5;
+}
+.price_table tbody th:nth-child(2) {
+  width: 30% !important;
+  border-top: 0.1px solid #c5c5c5;
+}
+.price_table tbody th:last-child {
+  border-right: 0.1px solid #ccc;
+}
+.price_table tbody td:nth-child(1) {
+  text-align: left;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #999999;
+}
+.price_table tbody td:nth-child(2) {
+  text-align: left;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #999999;
+}
+.last_table_row {
+  /* color: red !important; */
+}
+
+/* Pricing table end */

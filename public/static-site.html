@@ -1,0 +1,2010 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title_docter_name"></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        max-width: 100vw;
+        overflow-x: hidden;
+        font-family: "Inter";
+      }
+      body::-webkit-scrollbar {
+        display: none;
+      }
+      .navbar {
+        height: 10vh;
+        width: 95%;
+        margin: auto;
+        background-color: transparent;
+        position: relative;
+        font-size: 16px;
+      }
+
+      .navbar > .nav-header {
+        display: inline;
+      }
+
+      .navbar > .nav-header > .nav-title {
+        display: inline-block;
+        font-size: 1em;
+        font-weight: 500;
+        color: #000;
+        padding: 10px;
+        margin: 10px 0;
+      }
+
+      .navbar > .nav-btn {
+        display: none;
+      }
+
+      .navbar > .nav-links {
+        display: inline;
+        float: right;
+      }
+
+      .navbar > .nav-links > a {
+        display: inline-block;
+        padding: 12px;
+        text-decoration: none;
+        color: #000;
+        margin: 10px;
+        font-size: 1em;
+        font-weight: 500;
+      }
+
+      .navbar > .nav-links > a:last-child {
+        display: inline-block;
+        background: linear-gradient(90deg, #3f9a9d 0%, #50b38e 100%);
+        border-radius: 2.08486px;
+        padding: 7px 13px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        margin: 10px;
+        font-size: 1em;
+      }
+
+      .navbar > .nav-links > a:hover {
+        color: #50b38e;
+      }
+
+      .navbar > #nav-check {
+        display: none;
+      }
+
+      @media (max-width: 600px) {
+        .navbar {
+          width: 90%;
+        }
+        .navbar > .nav-btn {
+          display: inline-block;
+          position: absolute;
+          right: -20px;
+          top: 5px;
+        }
+        .navbar > .nav-btn > label {
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          padding: 13px;
+        }
+        .navbar > .nav-btn > label:hover,
+        .navbar #nav-check:checked ~ .nav-btn > label {
+          /* background-color: rgba(0, 0, 0, 0.3); */
+        }
+        .navbar > .nav-btn > label > span {
+          display: block;
+          width: 25px;
+          height: 7px;
+          border-top: 3px solid #3e999e;
+        }
+        .navbar > .nav-links {
+          position: absolute;
+          display: block;
+          width: 200px;
+          background-color: #fff;
+          height: 0px;
+          transition: all 0.3s ease-in;
+          overflow-y: hidden;
+          top: 50px;
+          right: 15px;
+          z-index: 99;
+          text-align: center;
+        }
+        .navbar > .nav-links > a {
+          display: block;
+          max-width: 100%;
+          border-top: 0.3px solid #3f9a9d;
+          padding: 20px 0;
+          margin: 0;
+          color: #3f9a9d;
+        }
+        .navbar > .nav-links > a:first-child {
+          border-top: 0.3px solid #fff;
+        }
+        .navbar > .nav-links > a:nth-child(4) {
+          border-bottom: 0.3px solid #3f9a9d;
+        }
+        .navbar > .nav-links > a:last-child {
+          margin: 20px;
+          font-size: 0.9rem;
+          border-top: 0.3px solid #3f9a9d;
+        }
+        .navbar > #nav-check:not(:checked) ~ .nav-links {
+          height: 0px;
+        }
+        .navbar > #nav-check:checked ~ .nav-links {
+          height: 310px;
+          border: 0.3px solid #3f9a9d;
+        }
+      }
+
+      /* Header */
+      .main_head {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 90vh;
+        font-size: 16px;
+      }
+      .main_svg_top {
+        position: absolute;
+        top: -20vh;
+        right: 0vw;
+        z-index: -1;
+      }
+      .main_svg_low {
+        position: absolute;
+        top: 0vh;
+        right: 0vw;
+        z-index: -1;
+      }
+      .main_head_left {
+        width: 50%;
+        position: relative;
+      }
+      .main_left_box {
+        width: 70%;
+        margin: auto;
+      }
+      .main_head_left svg {
+        position: absolute;
+        bottom: -20vw;
+        right: -8vw;
+        z-index: -1;
+      }
+      .main_head_left_header {
+        position: relative;
+        font-size: 2.3em;
+        font-weight: 400;
+        font-family: "DM Serif Display";
+        color: #1a1a1a;
+      }
+
+      .main_head_left_header svg {
+        position: absolute;
+        z-index: -1;
+        top: -20vh;
+        left: -8vw;
+        width: 30vw;
+        height: 30vw;
+      }
+      .docter_name {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+      }
+      .main_head_left_specialist {
+        flex-wrap: wrap;
+        display: flex;
+        color: #fff;
+        font-size: 0.9em;
+        font-weight: 500;
+        margin-top: 1vh;
+      }
+      #docter_education,
+      .docter_exp_content,
+      .speciality_card {
+        margin: 0.2vw 0.9em 0.5em 0;
+        padding: 0.6em 1.5em;
+        background: linear-gradient(
+          90deg,
+          rgba(65, 145, 86, 0.5) 0%,
+          rgba(59, 160, 156, 0.5) 100%
+        );
+        border-radius: 1rem;
+      }
+      #speciality_list {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .main_head_left_message {
+        margin: 4vh 0;
+        font-family: "DM Sans";
+      }
+      .header_book_cta button {
+        border: none;
+        margin: 30px 0;
+        padding: 0.5vw 2vw;
+        width: fit-content;
+        border-radius: 0.2rem;
+        font-size: 1.1vw;
+        color: #ffffff;
+        font-family: "DM Sans";
+        background: linear-gradient(90deg, #3e999f 0%, #55ba8a 120.95%);
+      }
+      .main_head_right {
+        width: 50%;
+        margin: auto;
+      }
+      .docter_image_box {
+        background-color: #efefef;
+        border-radius: 1rem;
+        width: 60%;
+        height: 30em;
+        min-width: 20em;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 10px;
+      }
+      .docter_image_box img {
+        width: 100%;
+        max-height: 100%;
+      }
+      .docter_image_box .whatsapp_logo {
+        position: absolute;
+        width: 30%;
+        right: -15%;
+        top: 40%;
+      }
+      @media (max-width: 600px) {
+        .main_head {
+          flex-direction: column-reverse;
+          height: auto;
+        }
+        .main_head_left {
+          width: 100%;
+        }
+        .main_left_box {
+          width: 100%;
+        }
+        .main_head_left_header {
+          text-align: center;
+          font-size: 1.5em;
+          margin-top: 1vh;
+        }
+        .main_head_right {
+          width: 100%;
+        }
+        .docter_image_box {
+          width: 80%;
+        }
+        .main_head_left_specialist {
+          justify-content: center;
+          margin-top: 1em;
+        }
+        #speciality_list {
+          justify-content: center;
+        }
+        .main_head_left_message {
+          text-align: center;
+          margin-top: 2vh;
+        }
+        .header_book_cta {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .header_book_cta button {
+          margin: 10px 0;
+          padding: 0.5em 2em;
+          width: fit-content;
+          border-radius: 0.2rem;
+          font-size: 1em;
+          color: #ffffff;
+          font-family: "DM Sans";
+          background: linear-gradient(90deg, #3e999f 0%, #55ba8a 120.95%);
+          border: none;
+        }
+      }
+      /* Treatments */
+
+      .treatment_head {
+        padding: 5vh 0;
+        width: 90%;
+        margin: auto;
+        font-family: "DM Serif Display";
+        font-size: 2.3em;
+        font-weight: 400;
+      }
+      .treatment_options {
+        display: flex;
+        justify-content: space-between;
+        font-family: "DM Sans";
+        font-weight: 700;
+        font-size: 1.3vw;
+        padding-bottom: 0.5vw;
+        border-bottom: 0.4rem solid #eaeaea;
+        text-align: center;
+      }
+
+      .treatment_body {
+        display: flex;
+        padding: 5em;
+        width: 90%;
+        margin: auto;
+      }
+      .treatment_left {
+        width: 50%;
+        position: relative;
+        margin: auto;
+      }
+      .treatment_left svg {
+        position: absolute;
+        top: -20vh;
+        left: -15vw;
+        z-index: -1;
+      }
+      .treatment_left_head {
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        font-size: 2em;
+        width: fit-content;
+        font-weight: 500;
+        font-style: "DM Serif Display";
+      }
+      .treatment_left_desc {
+        margin-top: 10vh;
+        width: 90%;
+        font-style: "DM Sans";
+        font-size: 1.2em;
+        font-weight: 400;
+        text-align: justify;
+      }
+      .treatment_left_symp {
+        margin: 5vh 0;
+        width: fit-content;
+        font-style: "DM Sans";
+        font-size: 1.1em;
+        font-weight: 400;
+        color: #8f8f8f;
+        text-align: justify;
+      }
+      .treatment_card_cta {
+        margin: 30px 0;
+        padding: 0.5em 2em;
+        width: fit-content;
+        border-radius: 0.2rem;
+        font-size: 1em;
+        color: #ffffff;
+        font-family: "DM Sans";
+        background: linear-gradient(90deg, #3e999f 0%, #55ba8a 120.95%);
+      }
+      .treatment_right {
+        width: 40%;
+      }
+      .treatment_image {
+        width: 25em;
+        height: 25em;
+        margin: auto;
+        border-radius: 1rem;
+        position: relative;
+        background-color: red;
+      }
+      .treatment_image img {
+        width: 100%;
+        max-height: 100%;
+        z-index: 99;
+      }
+      .treatment_image svg {
+        position: absolute;
+        bottom: -5vh;
+        left: -20vw;
+        z-index: -1;
+      }
+      .nav {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        overflow-x: scroll;
+        justify-content: flex-start;
+        border-bottom: 5px solid #eaeaea !important;
+        margin-bottom: 2vh;
+        font-size: 16px;
+        position: relative;
+      }
+      .nav li a {
+        min-width: 15em;
+        position: relative;
+        color: #000;
+        font-weight: 600;
+        text-transform: capitalize;
+      }
+      .nav li a:hover {
+        color: #419463;
+        background-color: transparent;
+      }
+      .nav li.active a {
+        color: #419463;
+        background-color: transparent;
+      }
+      .nav::-webkit-scrollbar {
+        display: none;
+      }
+      @media (max-width: 600px) {
+        .treatment_image {
+          width: 10em;
+        }
+        .treatment_body {
+          display: flex;
+          flex-direction: column-reverse;
+          width: 100%;
+          padding: 2em;
+        }
+        .treatment_left {
+          width: 100%;
+          position: relative;
+          margin: auto;
+        }
+        .treatment_right {
+          width: 100%;
+        }
+        .treatment_left_desc {
+          margin-top: 3vh;
+        }
+        .treatment_left_head {
+          font-size: 1.5em;
+        }
+        .treatment_head {
+          padding: 5vh 0;
+          width: 90%;
+          margin: auto;
+          font-family: "DM Serif Display";
+          font-size: 1.6em;
+          font-weight: 400;
+        }
+      }
+      /* Clinic */
+      .clinics {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+      }
+      .clinic_container_header {
+        font-family: "DM Serif Display";
+        font-size: 2.3em;
+        font-weight: 400;
+        color: #1a1a1a;
+        text-align: center;
+        margin-top: 10vh;
+      }
+      .clinic_card {
+        display: flex;
+        align-items: center;
+        margin: 2vw;
+        background: #f8f8f8;
+        padding: 1.5vw 1.5vw;
+        border: 0.712519px solid #3f9a9d;
+        box-shadow: 5.70015px 5.70015px 14.2504px rgba(0, 0, 0, 0.05);
+        border-radius: 14.2504px;
+      }
+      .clinic_svg_high {
+        position: absolute;
+        top: 0vw;
+        left: 15vw;
+        z-index: -1;
+      }
+      .clinic_svg_low {
+        position: absolute;
+        bottom: 0;
+        right: 15vw;
+        z-index: -1;
+      }
+      .clinic_card_left {
+        margin-right: 1vw;
+        width: 20vw;
+      }
+      .clinic_card_left_head {
+        margin-bottom: 2vh;
+        padding-right: 1vw;
+        font-family: "DM Serif Display";
+        font-size: 1.3em;
+        font-weight: 400;
+        color: #1a1a1a;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+      }
+      .clinic_card_left_image {
+        margin-bottom: 1.5em;
+        width: 20vw;
+        height: 25vh;
+        border-radius: 0.5rem;
+        background: #155a69;
+        color: grey;
+      }
+      .clinic_card_left_image img {
+        width: 100%;
+        max-height: 100%;
+      }
+      .clinic_card_left_details {
+        display: flex;
+        margin-bottom: 2vw;
+        justify-content: space-between;
+      }
+      .clinic_card_left_location {
+        width: 50%;
+      }
+      .clinic_card_left_location_head {
+        width: fit-content;
+        font-family: "DM Sans";
+        color: #8b8b8b;
+        padding-right: 0.5vw;
+        font-size: 0.9em;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+      }
+      .clinic_card_left_head_desc {
+        width: 90%;
+        color: #484848;
+        font-size: 0.9em;
+        font-family: "DM Sans";
+        word-wrap: break-word;
+        margin-top: 5px;
+      }
+      .clinic_card_left_directions {
+        font-size: 0.9em;
+        color: #3e999e;
+        font-family: "DM Serif Display";
+        cursor: pointer;
+        font-weight: 400;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+      .clinic_card_cta button {
+        padding: 0.5em 2em;
+        border-radius: 0.2rem;
+        font-size: 0.9em;
+        color: #ffffff;
+        font-family: "DM Sans";
+        border: none;
+        background: linear-gradient(90deg, #3e999f 0%, #55ba8a 120.95%);
+      }
+      .clinic_card_right {
+        margin-left: 1vw;
+        margin-right: 1vw;
+        background-color: #ffffff;
+        padding: 1vw 1.5vw;
+        width: 18vw;
+        height: 42vh;
+      }
+      .clinic_card_right_head {
+        width: fit-content;
+        color: #8b8b8b;
+        font-weight: 500;
+        font-size: 0.8em;
+        padding-right: 1vw;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+      }
+      .clinic_visiting_hours {
+        margin-top: 1.5vw;
+        font-family: "DM Sans";
+        font-size: 0.8em;
+        font-weight: 500;
+      }
+      .clinic_visiting_days {
+        display: flex;
+        margin-top: 1.5vw;
+      }
+      .clinic_visiting_days div {
+        font-size: 0.8em;
+        font-weight: 500;
+        width: fit-content;
+        padding: 0.1em 0.8em;
+        margin-right: 0.7em;
+        color: #3f9a9e;
+        background-color: #3f9a9d66;
+        border-radius: 2rem;
+      }
+
+      @media (max-width: 600px) {
+        .clinics {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 16px;
+        }
+        .clinic_card {
+          display: flex;
+          align-items: end;
+          justify-content: center;
+          padding: 1.5em;
+          flex-direction: column;
+          width: 80vw;
+          position: relative;
+        }
+        .clinic_container_header {
+          font-size: 1.6em;
+          width: 90%;
+          margin: 1em auto;
+          text-align: left;
+        }
+        .clinic_card_left {
+          width: 100%;
+          margin: 0;
+        }
+        .clinic_card_right {
+          width: 100%;
+          margin: 0;
+          margin-bottom: 50px;
+          padding: 0;
+        }
+        .clinic_card_left_head {
+          text-align: center;
+          font-size: 1.4em;
+          font-weight: 400;
+        }
+        .clinic_card_left_image {
+          margin-bottom: 2.5em;
+          width: 100%;
+        }
+        .clinic_card_left_image img {
+          width: 100%;
+        }
+        .clinic_card_left_details {
+          flex-direction: column;
+          margin: 1em 0.5em;
+        }
+        .clinic_card_left_location {
+          width: 100%;
+        }
+        .clinic_card_left_directions {
+          margin: 10px 0 0 0;
+        }
+        .clinic_card_right_head {
+          width: fit-content;
+          color: #8b8b8b;
+          font-weight: 500;
+          font-size: 0.8em;
+          padding-left: 5vw;
+          padding-top: 5vw;
+          padding-bottom: 2vw;
+          text-decoration: underline;
+          text-underline-offset: 5px;
+        }
+        .clinic_visiting_hours {
+          padding-left: 5vw;
+          margin-top: 2vh;
+        }
+        .clinic_card_cta {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          margin: 20px 0;
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      /* Testimonial  */
+
+      .reviews {
+        margin-bottom: 10vh;
+        position: relative;
+        height: 70vh;
+        background: url("./reviews_bg.png") no-repeat;
+        background-size: cover;
+        background-size: 100% 100%;
+        font-size: 16px;
+      }
+      .testimonial_svg_3 {
+        position: absolute;
+        top: 15vh;
+        left: 50%;
+        z-index: 10;
+        width: 5em;
+        transform: translateX(-50%);
+      }
+
+      /* Testimonial Carousel */
+
+      .wrapper {
+        background-color: #fff;
+        position: absolute;
+        width: 75%;
+        min-height: 12em;
+        border-radius: 20px;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.1);
+        display: flex;
+      }
+      .testimonial-container {
+        text-align: center;
+        width: 80%;
+        height: 100%;
+        position: relative;
+        margin: auto;
+        padding: 1.8em 1.2em;
+      }
+      .wrapper button {
+        font-size: 1.8em;
+        height: 2.2em;
+        width: 2.2em;
+        background-color: transparent;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        border: none;
+        cursor: pointer;
+      }
+      .wrapper #next {
+        right: -3em;
+      }
+      .wrapper #next svg {
+        color: #4fb090;
+      }
+      .wrapper #prev {
+        left: -3em;
+      }
+      .wrapper #prev svg {
+        color: #4fb090;
+      }
+      .testimonial-container p {
+        font-family: "DM Serif Display";
+        font-weight: 400;
+        font-size: 1em;
+        color: #409259;
+        letter-spacing: 0.05em;
+      }
+      .testimonial-container h3 {
+        font-family: "DM Serif Display";
+        font-weight: 400;
+        font-size: 1.6em;
+        text-align: center;
+        color: #484848;
+      }
+      .testimonial_header {
+        font-family: "DM Serif Display";
+        font-size: 2.3em;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 600px) {
+        .reviews {
+          height: 50vh;
+        }
+        .wrapper #next {
+          right: -2em;
+        }
+        .wrapper #prev {
+          left: -2em;
+        }
+        .testimonial_svg_3 {
+          width: 3em;
+          top: 4vh;
+        }
+        .testimonial_header {
+          width: 90%;
+          margin: 1.5em auto 1em auto;
+          font-size: 1.6em;
+          font-weight: 400;
+          text-align: left;
+        }
+      }
+
+      /* Faq */
+
+      .faq {
+        margin-bottom: 25vh;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .faq_head {
+        font-family: "DM Serif Display";
+        font-size: 2.3em;
+        font-weight: 400;
+        margin-bottom: 5vh;
+        text-align: center;
+      }
+      .faq_desc {
+        margin: 1.5vh 0;
+        position: relative;
+        padding: 2.5vh 1vw;
+        font-size: 1.2em;
+        text-align: left;
+        width: 50vw;
+        background: #f4f4f4;
+        border-radius: 7px;
+        transition: 0.4s;
+        cursor: pointer;
+        border: none;
+        color: #484848;
+        text-transform: capitalize;
+      }
+      .faq_desc svg {
+        position: absolute;
+        right: 2vw;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 99;
+        width: 1em;
+      }
+      .faq_note {
+        display: none;
+        margin: 1vh 0;
+        padding: 1vh 0 1vh 1vw;
+        font-size: 1em;
+        text-align: left;
+        width: 49vw;
+        background: #f4f4f4;
+        color: #797979;
+        border-radius: 16.8272px;
+        border: 1px solid #3f9a9d;
+        box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      @media (max-width: 600px) {
+        .faq {
+          width: 90%;
+          margin: auto;
+        }
+        .faq_head {
+          font-size: 1.6em;
+          text-align: left;
+        }
+        .faq_desc {
+          width: 90vw;
+          font-size: 1em;
+        }
+        .faq_note {
+          width: 90vw;
+          font-size: 1em;
+        }
+      }
+
+      /* Blogs */
+
+      .blogs {
+        margin: 7vh 0 0 0;
+        margin-left: 5vw;
+        width: 95vw;
+        font-size: 16px;
+      }
+      .blog_head {
+        margin: 5vh 0;
+        font-family: "DM Serif Display";
+        font-size: 2.3em;
+        font-weight: 400;
+      }
+      .blog_body {
+        display: flex;
+        margin-bottom: 10vh;
+        overflow-x: auto;
+      }
+      .blog_body::-webkit-scrollbar {
+        display: none;
+      }
+      .blog_cards {
+        margin: 2em;
+        padding-bottom: 2vh;
+        width: 20em;
+        min-width: 20em;
+        border-radius: 20px;
+        box-shadow: 8px 8px 40px rgba(0, 0, 0, 0.1);
+      }
+      .blog_picture {
+        width: 100%;
+        height: 30vh;
+        overflow: hidden;
+      }
+      .blog_picture img {
+        width: 100%;
+        max-height: 100%;
+
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+      }
+      .blog_title {
+        font-size: 1em;
+        font-family: "DM Sans";
+        font-weight: 600;
+        color: #1a1a1a;
+        width: 90%;
+        margin: 1vh auto 0 auto;
+        word-wrap: break-word;
+      }
+      .blog_desc {
+        padding: 1vw 0;
+        margin: 0 auto;
+        word-wrap: break-word;
+        width: 90%;
+        font-size: 0.8em;
+        font-family: "DM Sans";
+        font-weight: 500;
+        color: #1a1a1a;
+      }
+      .blog_footer {
+        font-family: "Poppins";
+        padding: 1vh 1em;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.8em;
+        font-weight: 500;
+      }
+      .blog_footer_left {
+        display: flex;
+        align-items: center;
+        color: #56a7a6;
+        cursor: pointer;
+      }
+      .blog_footer_right {
+        display: flex;
+        align-items: center;
+        color: #828282;
+      }
+      @media (max-width: 600px) {
+        .blogs {
+          margin: 7vh 0 0 0;
+          font-size: 16px;
+          width: 100vw;
+        }
+        .blog_head {
+          margin: 5vh auto 0 auto;
+          font-size: 1.6em;
+          width: 90%;
+        }
+      }
+      /* Footer */
+
+      .footer {
+        font-size: 16px;
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 10vh 0vw 20vh 0vh;
+        display: flex;
+        justify-content: space-around;
+        font-family: "Poppins";
+        color: #fff;
+        background: #3f9a9d;
+      }
+      .footer_div_header {
+        margin-top: 2vh;
+        margin-bottom: 3vh;
+        width: fit-content;
+        font-size: 1em;
+        font-weight: 500;
+        line-height: 1.2vw;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+      }
+      .footer_div_header2 {
+        margin-top: 5vh;
+        margin-bottom: 3vh;
+        width: fit-content;
+        font-size: 1em;
+        font-weight: 500;
+        line-height: 1.2vw;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+      }
+      .footer_content {
+        margin: 0.5vh 0;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 1em;
+        max-width: 30em;
+      }
+      .footer_content svg {
+        height: fit-content;
+        margin-right: 0.5vw;
+      }
+      .footer_logo {
+        position: absolute;
+        bottom: 1vh;
+        left: 50%;
+        text-align: center;
+        transform: translateX(-50%);
+      }
+      .footer_logo svg {
+        margin: 5px 0;
+      }
+      .social_icons_box svg {
+        margin: 0 8px;
+        cursor: pointer;
+        width: 1.6em;
+      }
+      .social_icons_box button {
+        background: transparent;
+        border: none;
+      }
+      .footer_treatment_names {
+        margin: 10px 0;
+      }
+      @media (max-width: 600px) {
+        .footer {
+          display: flex;
+          justify-content: flex-end;
+          padding: 8vh 0vh;
+        }
+        .footer_contact {
+          padding-right: 2em;
+        }
+        .footer_treatment {
+          display: none;
+        }
+        .footer_clinic {
+          display: none;
+        }
+        .footer_logo {
+          position: absolute;
+          left: 10%;
+          top: 50%;
+          text-align: center;
+          transform: translateY(-50%);
+        }
+        .social_icons_box svg {
+          margin: 0 7px;
+          cursor: pointer;
+          width: 1.4em;
+        }
+        .footer_content {
+          font-size: 0.9em;
+        }
+      }
+      /* Gator Tab CSS */
+
+      .gator-tabs-container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .gator-tabs-header {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .gator-tabs-header > div {
+        cursor: pointer;
+        flex-grow: 1;
+      }
+
+      .gator-tabs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 75vh;
+        align-items: center;
+      }
+
+      .gator-tab {
+        padding: 1rem;
+      }
+
+      /* .nav > li[data-slide-to="0"].active a::after {
+        background-color: green;
+        content: " ";
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 100%;
+        height: 5px;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <div class="navbar">
+      <input type="checkbox" id="nav-check" />
+      <div class="nav-header">
+        <div class="nav-title" id="nav_docter_name"></div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <div class="nav-links">
+        <a href="#">About Me</a>
+        <a href="#">Services</a>
+        <a href="#">Clinic</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Book Appointment</a>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+
+    <div class="main_head">
+      <svg
+        class="main_svg_top"
+        width="20vw"
+        height="20vw"
+        viewBox="0 0 493 449"
+        fill="none"
+      >
+        <g filter="url(#filter0_f_338_5868)">
+          <path
+            d="M88.4857 207.9C52.2508 86.1518 147.87 111.453 280.204 72.0668C412.539 32.6811 531.476 -56.4766 567.711 65.2711C603.946 187.019 526.042 317.643 393.708 357.029C261.373 396.415 124.721 329.647 88.4857 207.9Z"
+            fill="#8BF0A1"
+            fill-opacity="0.5"
+          />
+        </g>
+        <defs>
+          <filter
+            id="filter0_f_338_5868"
+            x="0.75"
+            y="-76.4668"
+            width="655.844"
+            height="524.807"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feGaussianBlur
+              stdDeviation="40"
+              result="effect1_foregroundBlur_338_5868"
+            />
+          </filter>
+        </defs>
+      </svg>
+      <div class="main_head_left">
+        <div class="main_left_box">
+          <div class="main_head_left_header">
+            <!-- <svg width="656" height="528" viewBox="0 0 656 528" fill="none">
+              <g filter="url(#filter0_f_338_5873)">
+                <path
+                  d="M87.4857 286.9C51.2508 165.152 167.666 183.657 300 144.271C432.334 104.885 530.476 22.5234 566.711 144.271C602.946 266.019 525.042 396.643 392.708 436.029C260.373 475.415 123.721 408.647 87.4857 286.9Z"
+                  fill="#CEECEC"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_f_338_5873"
+                  x="0.786133"
+                  y="0.304688"
+                  width="654.808"
+                  height="527.035"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="40"
+                    result="effect1_foregroundBlur_338_5873"
+                  />
+                </filter>
+              </defs>
+            </svg> -->
+            Welcome!<br />
+            I am
+            <span class="docter_name">Dr. <span id="docter_name"></span></span>
+            <br />
+            and I am here to help you.
+          </div>
+          <div class="main_head_left_specialist">
+            <div id="docter_education"></div>
+            <div class="docter_exp_content">
+              <span id="docter_experience"></span>+ Years of Experience
+            </div>
+            <div id="speciality_list"></div>
+          </div>
+          <div id="docter_bio" class="main_head_left_message"></div>
+          <div class="header_book_cta"><button>Book Appointment</button></div>
+          <!-- <svg width="30vw" height="30vw" viewBox="0 0 577 470" fill="none">
+            <g filter="url(#filter0_f_338_5862)">
+              <path
+                d="M496.336 339.5C369.445 484.5 363.292 266.119 262.5 266.119C161.708 266.119 80 437.21 80 310.119C80 183.028 161.708 80 262.5 80C363.292 80 496.336 212.409 496.336 339.5Z"
+                fill="#C4F6CF"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_f_338_5862"
+                x="0"
+                y="0"
+                width="576.336"
+                height="469.207"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="40"
+                  result="effect1_foregroundBlur_338_5862"
+                />
+              </filter>
+            </defs>
+          </svg> -->
+        </div>
+      </div>
+      <div class="main_head_right">
+        <div class="docter_image_box" id="docter_image_box">
+          <img
+            src="./whatsapp_logo.svg"
+            alt="whatsapp_logo"
+            class="whatsapp_logo"
+          />
+          <!-- <img src="./Rectangle 13462.png" alt="docter_image" /> -->
+        </div>
+      </div>
+      <svg
+        class="main_svg_low"
+        width="20vw"
+        height="20vw"
+        viewBox="0 0 358 476"
+        fill="none"
+      >
+        <g filter="url(#filter0_f_338_5859)">
+          <path
+            d="M445 310.119C445 437.21 383.367 385.658 282.575 385.658C181.783 385.658 80 437.21 80 310.119C80 183.028 161.708 80 262.5 80C363.292 80 445 183.028 445 310.119Z"
+            fill="#59BFBF"
+            fill-opacity="0.3"
+          />
+        </g>
+        <defs>
+          <filter
+            id="filter0_f_338_5859"
+            x="0"
+            y="0"
+            width="525"
+            height="476"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feGaussianBlur
+              stdDeviation="40"
+              result="effect1_foregroundBlur_338_5859"
+            />
+          </filter>
+        </defs>
+      </svg>
+    </div>
+
+    <!-- Treatments Tabs -->
+
+    <div class="">
+      <h1 class="treatment_head">Treatments</h1>
+      <ul class="nav" id="nav_content"></ul>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" id="treatment_content"></div>
+      </div>
+    </div>
+
+    <!-- Clinics -->
+
+    <h1 class="clinic_container_header">Clinics</h1>
+    <div class="clinics">
+      <div id="clinicCard_container">
+        <svg
+          class="clinic_svg_high"
+          width="20vw"
+          height="20vw"
+          viewBox="0 0 515 531"
+          fill="none"
+        >
+          <g filter="url(#filter0_f_338_5861)">
+            <path
+              d="M367.076 97.0738C486.827 139.64 417.61 180.447 383.852 275.418C350.094 370.389 364.579 483.559 244.828 440.993C125.077 398.427 55.3662 286.931 89.1241 191.96C122.882 96.9897 247.326 54.5076 367.076 97.0738Z"
+              fill="#D0EDED"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_338_5861"
+              x="0.616211"
+              y="0.544922"
+              width="513.975"
+              height="529.678"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="40"
+                result="effect1_foregroundBlur_338_5861"
+              />
+            </filter>
+          </defs>
+        </svg>
+        <svg
+          class="clinic_svg_low"
+          width="20vw"
+          height="20vw"
+          viewBox="0 0 657 526"
+          fill="none"
+        >
+          <g filter="url(#filter0_f_338_5870)">
+            <path
+              d="M88.4857 284.9C52.2508 163.152 147.87 188.453 280.204 149.067C412.539 109.681 531.476 20.5234 567.711 142.271C603.946 264.019 526.042 394.643 393.708 434.029C261.373 473.415 124.721 406.647 88.4857 284.9Z"
+              fill="#8BF0A1"
+              fill-opacity="0.5"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_338_5870"
+              x="0.75"
+              y="0.533203"
+              width="655.844"
+              height="524.807"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="40"
+                result="effect1_foregroundBlur_338_5870"
+              />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+
+    <h1 class="testimonial_header">Our Patients Say</h1>
+    <div class="reviews">
+      <svg
+        class="testimonial_svg_3"
+        width="111"
+        height="83"
+        viewBox="0 0 111 83"
+        fill="none"
+      >
+        <path
+          d="M25.3328 82.6C17.9328 82.6 11.9328 80 7.33281 74.8C2.93281 69.4 0.732813 62.4 0.732813 53.8C0.732813 42.6 4.03281 32.2 10.6328 22.6C17.2328 12.8 25.4328 5.5 35.2328 0.699998L37.0328 4.29999C32.8328 7.49999 29.1328 11.6 25.9328 16.6C22.7328 21.6 20.4328 27.8 19.0328 35.2L25.3328 36.7C32.3328 38.3 37.7328 41.3 41.5328 45.7C45.5328 49.9 47.5328 55 47.5328 61C47.5328 67.4 45.3328 72.6 40.9328 76.6C36.7328 80.6 31.5328 82.6 25.3328 82.6ZM88.6328 82.6C81.2328 82.6 75.2328 80 70.6328 74.8C66.2328 69.4 64.0328 62.4 64.0328 53.8C64.0328 42.6 67.3328 32.2 73.9328 22.6C80.5328 12.8 88.7328 5.5 98.5328 0.699998L100.333 4.29999C96.1328 7.49999 92.4328 11.6 89.2328 16.6C86.0328 21.6 83.7328 27.8 82.3328 35.2L88.6328 36.7C95.6328 38.3 101.033 41.3 104.833 45.7C108.833 49.9 110.833 55 110.833 61C110.833 67.4 108.633 72.6 104.233 76.6C100.033 80.6 94.8328 82.6 88.6328 82.6Z"
+          fill="#409259"
+        />
+      </svg>
+      <div class="wrapper">
+        <div class="testimonial-container" id="testimonial-container"></div>
+
+        <button id="prev">
+          <svg
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5L8.25 12l7.5-7.5"
+            />
+          </svg>
+        </button>
+
+        <button id="next">
+          <svg
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 4.5l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+
+    <div class="faq" id="faq_box">
+      <h1 class="faq_head">Frequently Asked Questions</h1>
+    </div>
+
+    <!-- Blogs -->
+
+    <div class="blogs">
+      <h1 class="blog_head">Blogs</h1>
+      <div class="blog_body" id="blog_body"></div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+      <div class="footer_contact">
+        <div>
+          <div class="footer_div_header">Contact Us</div>
+          <div class="footer_content" id="footer_phone">
+            <svg width="20" height="20" viewBox="0 0 25 25" fill="none">
+              <rect width="25" height="25" fill="url(#pattern3)" />
+              <defs>
+                <pattern
+                  id="pattern3"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    xlink:href="#image0_338_8189"
+                    transform="scale(0.0111111)"
+                  />
+                </pattern>
+                <image
+                  id="image0_338_8189"
+                  width="90"
+                  height="90"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADtElEQVR4nO3cW6hmYxgH8DXMyDGGCHExTklNxs0kp1KaIZJSE2pMimSQC1duRLmZNJORKymHkQmTCxqNUqPI5gI5XCiHsUcTmUNyHsb8tNpLSnvb37cOnnet7/3Vvtx7vc//+/Za3/e8z1pFkWVZlmVZlmVZNimwCKuxDbuxF8/itOi1DQZW4Auz+wonRa+x13AINuCg/7Y5eq29hcOwxWgO4tLoNfcODsXzxvMxFkavvVewTj13RK+9N3D1COfkuezB8dE1JA9H4kvNPBZdR/Jwn+YOYGl0Lal/ytilHduj60kWVmrXquiakoRHWg56ujznR9eVHLypfQ9G15UcfNNB0L9iSXRtScFvurElurak4BfdWRldXzKqb3Vd+ST3Qf4J+l3dujX2rZQIbOo46Neja0wC7uw46Peja0wCzuk46Meja0xGC527ufyB86LrSwYe0I0N0bUlBadXbc42fYtjo2tLDra2HPTq6JqShItaDPktLIiuKVl4rYWQD2BZdC1Jw4UtBP1EdB29gOcaBn1xdA29gFPwfYOgl0TX0Bu4u0HQ10avv2+jYXW7em+Xvx9dQ2/gTPxQM+x10evvFdymvlui198reKHBBu3y6PX3Bk7Ajpphf11+iomuoTdwPn6uGfZHWBxdQ2/gJvVN4ajoGnoD6xuE/UreER896IXVbXB1PZ27eqOHfUy54Vo7ah7NYY/XD9nRIOxyxGHRqMebaDgL3zU8Z+fx3hHDvqTh7F45Mnxc5++KIcBV2N8g7A9xas1jL8WT1Yzf9qplMNx7HnEdfm8Q9q5xvq6X/wXYWM2N/Nun5YtfDBWun6PwUZVz2mvmOcYC3FyNMoxyDTijGCKswZ+a2ThbPxsXVLvr49hf/b2ji6HB7S2EPVWdjs7G5Xiq4YDP9CDvFjPTF2lyGunKG2WDrBgSrGp4gexK+d/2DE4shgLXVBsAKdqHewazv4krO74hqakPcFkxoG+Qe6WrfHzG5kE8IwrnNmxE/R+mB/H0MzNdv/ekbVMxoH72NunaXQxsp2a9NO0phgY34Cdp2VoMEZYldpG8sRj4kM5L0Qnjs0H3s/9WtUB/DPwsvaKYFGY6du8EBP1wMaHz2Xc1vPNgHC+WD74tJhVOrjptdZ8wOYry2nB4dK1JwHK82nLA5Yv30ES/k+e5Pe/lFm6nLh8+nh9DNJ+y8YP78fmYAe/EvThi3oNks05Mra3O5VPVDvm+6mdnNe9Rft2/Io+hZVmWZVmWZVmWZVmWFbP6C7iQWJhNB3m4AAAAAElFTkSuQmCC"
+                />
+              </defs>
+            </svg>
+          </div>
+          <br />
+          <div class="footer_content" id="footer_email">
+            <svg width="20" height="20" viewBox="0 0 25 25" fill="#fff">
+              <rect width="20" height="20" fill="url(#pattern4)" />
+              <defs>
+                <pattern
+                  id="pattern4"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    xlink:href="#image0_338_6047"
+                    transform="scale(0.0111111)"
+                  />
+                </pattern>
+                <image
+                  id="image0_338_6047"
+                  width="90"
+                  height="90"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACy0lEQVR4nO3avWsUQRzG8VODCCJoFAxYxMLGRhBFsNJGq1jZ+dJYamfjHxCLFBYWFgqCglpZaaWNVoJoY2OjYgIWgkJACRolyVcGNiAhuZndnZn9zd7zgcDB3e5kH/Z2Z57bwUBEREREREREREREREQiAnYCrxCft8CetmFvB557hxpdL4Edsc7srcDjro/IoKfAtiaBbhry3hbgXtdHZsh9YKxJlu7NB76NgRtdH6EBt4DNnpPy7rCgg74OwDVG10zoZdYXdNAFHrgMLDM6VoCrdSYOIUEHTVmAc8Bf+m8JuOTJYtfaqXBo0M57YJ9ngCngF/21CJz1ZDABvFu7YZ2gnVnggGegE8AP+mcBOOU59v3Ax/U2rhu08xU45BnwCPCd/pgHjnuO+SDwZaMdNAk6ysAFCTmxjvpOrKZBr36VTgd8lT5QrtmAS+XJkEtlm6CdPwE3h73r3RwKEHLzPwP8DtlZ26BDpzulNX9vAqaz5+tMZ2MEXWcC/wz7QhZoV+ou0GIFXXtJalSyyiF20MElC/YkLdFSBJ38n04g+cmRKuiSmr+ZHJe7lEFbb/5W6jZwloO22vwtNWngrAdtrflbbNrAlRC0leZvoU0DV0rQXTd/810WYbmD7uqAozRwpQUd2vxNRmr+Psdq4EoMOlfzF7WBKzXo1M1f9Aau5KBTNX8vUjRwpQcdeyn8xOLS31LQzs2AZ/7usLHb7jOeMsuNwagH7X1g8L8bmOsgvlV/7vWUZ5uxat+dsBh080dgDf/gYDXoaA91W3l43nLQzmtgvEXI49U+Omc9aGcOONYg5MPAJ4woIWiqldt0yNkN7Aau51jt9THoVT+Bh8AFVxJVvfFE9foi8Kj6jDmlBV0sBZ2Jgs5EQWeioDNR0Jko6EwUdCYKOhMFnYmCzkRBZ6KgM1HQmSjoTHw9uoiIiIiIiIiIiIiIiAyG+Ae+eiaBOoDMBQAAAABJRU5ErkJggg=="
+                />
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div>
+          <div class="footer_div_header2">Connect With Us</div>
+          <div class="social_icons_box" id="social_icons_box"></div>
+        </div>
+      </div>
+
+      <div class="footer_treatment">
+        <div class="footer_div_header">Treatments</div>
+        <div id="treatment_tabs_container2"></div>
+      </div>
+      <div class="footer_clinic">
+        <div class="footer_div_header">Clinics</div>
+        <div id="clinic_names_container"></div>
+        <div class="footer_logo">
+          Powered By
+          <div>
+            <svg width="55" height="54" viewBox="0 0 55 54" fill="none">
+              <g clip-path="url(#clip0_338_6120)">
+                <g style="mix-blend-mode: multiply">
+                  <path
+                    d="M22.1066 20.72C22.9328 20.9248 24.2968 17.5706 27.3324 16.0937C30.368 14.6168 31.8414 15.2632 31.8414 15.2632C30.0252 15.8307 27.5397 18.842 27.7868 20.1971C28.0339 21.5513 29.1011 20.013 29.8707 18.9969C30.4942 18.1741 31.8215 17.2409 34.5159 16.5362V32.2625C34.5159 34.2034 33.731 35.9594 32.4618 37.2316C31.1758 38.5214 29.3911 39.3128 27.4227 39.2898C23.5678 39.2453 20.4932 36.0369 20.4932 32.1728C20.4932 29.7204 22.3552 27.6737 24.791 27.4421C25.9118 27.3356 26.956 27.1032 27.8534 26.6692C28.1617 26.5204 28.4524 26.3463 28.7232 26.1462C32.37 23.4477 33.7287 18.7677 32.9032 18.5621C32.077 18.3566 30.7122 21.7116 27.6767 23.1877C24.6418 24.6654 23.1677 24.019 23.1677 24.019C24.9853 23.45 27.4701 20.4401 27.223 19.0851C26.9759 17.7309 25.9079 19.2684 25.1391 20.2852C24.5156 21.1081 23.1875 22.0413 20.4932 22.746V7.02046C20.4932 3.12032 23.6611 -0.0367523 27.5581 -0.00761239C31.4237 0.0215275 34.5151 3.23381 34.5151 7.10865C34.5151 9.56177 32.6523 11.6085 30.2165 11.84C29.0965 11.9466 28.0515 12.179 27.1549 12.613C26.8466 12.7618 26.5559 12.9359 26.2851 13.136C22.639 15.8353 21.2804 20.5153 22.1058 20.7208L22.1066 20.72Z"
+                    fill="#BDCBFF"
+                  />
+                </g>
+                <path
+                  d="M47.1041 19.6402C47.1041 23.5219 43.9645 26.6682 40.0928 26.6682H27.8502C28.1585 26.5195 28.4493 26.3454 28.7201 26.1453C32.3669 23.4468 33.7256 18.7667 32.9001 18.5612C32.0739 18.3557 30.7091 21.7106 27.6735 23.1868C24.6387 24.6645 23.1645 24.0181 23.1645 24.0181C24.9822 23.4491 27.467 20.4392 27.2199 19.0842C26.9728 17.73 25.9048 19.2675 25.136 20.2843C24.5125 21.1071 23.1844 22.0404 20.49 22.7451C19.8597 22.9092 19.1536 23.0618 18.3648 23.1968C14.8618 23.7987 13.9071 24.2535 12.8024 26.3439C11.7138 26.0003 10.7399 25.3984 9.95271 24.6093C8.68432 23.3371 7.89941 21.5795 7.89941 19.6394C7.89941 15.7584 11.0383 12.6113 14.9108 12.6113H27.1525C26.8442 12.7601 26.5535 12.9342 26.2827 13.1343C22.6367 15.8336 21.278 20.5136 22.1034 20.7191C22.9297 20.9239 24.2937 17.5697 27.3293 16.0928C30.3648 14.6158 31.8383 15.2623 31.8383 15.2623C30.0221 15.8297 27.5366 18.8411 27.7837 20.1961C28.0308 21.5504 29.098 20.0121 29.8676 18.996C30.4911 18.1732 31.8184 17.24 34.5128 16.5352C35.1431 16.3704 35.8492 16.2178 36.638 16.082C40.1417 15.4808 41.0957 15.0269 42.2012 12.9349C43.289 13.2785 44.2629 13.8812 45.0501 14.6703C46.3192 15.9417 47.1041 17.6993 47.1041 19.6394V19.6402Z"
+                  fill="#194AF5"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_338_6120">
+                  <rect width="55" height="53.5652" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          DRCFO
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+      //  get doctorId query param
+      const urlParams = new URLSearchParams(window.location.search);
+      const doctorId = urlParams.get("doctorId");
+      fetch("https://cfo.doctor/api/wg/?doctorId=" + doctorId)
+        .then((res) => res.json())
+        .then((d) => {
+          //  data = d;
+          onDataLoad(d.data);
+        });
+
+      const onDataLoad = (data) => {
+        console.log("data", data);
+        document.getElementById("docter_experience").innerText =
+          data.personalInfo.experience;
+        document.getElementById("docter_name").innerText =
+          data.personalInfo.name;
+        document.getElementById("title_docter_name").innerText =
+          data.personalInfo.name;
+        document.getElementById("nav_docter_name").innerText =
+          data.personalInfo.name;
+        document.getElementById("docter_education").innerText =
+          data.personalInfo.education;
+        document.getElementById("docter_bio").innerText = data.personalInfo.bio;
+        document.getElementById(
+          "footer_phone"
+        ).innerText = `+91 ${data.contact?.number?.mobile}`;
+        document.getElementById("footer_email").innerText = data.contact?.email;
+        var img = document.createElement("img");
+        img.src = data.personalInfo.picture.fileUrl;
+        var src = document.getElementById("docter_image_box");
+        src.appendChild(img);
+
+        //Speciality List
+        data.personalInfo.specialities.forEach(function (element) {
+          var node = document.createElement("div");
+          node.innerHTML = `<div class="speciality_card">${element}</div>`;
+          document.getElementById("speciality_list").appendChild(node);
+        });
+
+        // Treatment data
+        $(document).ready(function () {
+          $("#myCarousel").carousel({
+            interval: 4000,
+          });
+
+          var clickEvent = false;
+          $("#myCarousel").on("click", ".nav a", function () {
+            clickEvent = true;
+            $(".nav li").removeClass("active");
+            $(this).parent().addClass("active");
+          });
+          $("#myCarousel").bind("slid", function () {
+            // Get currently selected item
+            var item = $("#myCarousel .carousel-inner .item.active");
+
+            // Deactivate all nav links
+            $("#myCarousel .nav li").removeClass("active");
+
+            // Index is 1-based, use this to activate the nav link based on slide
+            var index = item.index() + 1;
+            $("#myCarousel .nav li:nth-child(" + index + ")").addClass(
+              "active"
+            );
+          });
+        });
+
+        data.treatments.forEach(function (element, index) {
+          console.log(element?.picture?.fileUrl, index);
+          var node = document.createElement("div");
+          node.className = "item";
+          if (index == 0) {
+            node.classList.add(`${index == 0 ? "active" : ""}`);
+          }
+          node.innerHTML = `<div class="treatment_body">
+               <div class="treatment_left">
+           <h3 class="treatment_left_head">${element.name}</h3>
+           <p class="treatment_left_desc">
+            ${element.description}
+           </p>
+           <div class="treatment_left_symp">Facing any of the symptoms?</div>
+           <div class="treatment_card_cta">Book Appointment</div>
+         </div>
+         <div class="treatment_right">
+           <div class="treatment_image">
+      <img src=${element?.picture?.fileUrl} alt="no-clinic-image" />
+           </div>
+         </div>
+             </div>`;
+
+          document.getElementById("treatment_content").appendChild(node);
+
+          var ul = document.getElementById("nav_content");
+          var li = document.createElement("li");
+          li.innerHTML = `<a href="#">${element.name} </a>`;
+
+          li.setAttribute("data-target", "#myCarousel");
+          li.setAttribute("data-slide-to", index);
+          if (index == 0) {
+            li.classList.add("active");
+          }
+          ul.appendChild(li);
+          var node3 = document.createElement("div");
+          node3.innerHTML = `<div class="footer_treatment_names">${element.name}</div>`;
+          document
+            .getElementById("treatment_tabs_container2")
+            .appendChild(node3);
+        });
+
+        // Clinic Data
+        data.clinics.forEach(function (element, index) {
+          console.log(element);
+          var node3 = document.createElement("div");
+          node3.innerHTML = `<div class="clinic_card">
+             			             <div class="clinic_card_left">
+             			               <div class="clinic_card_left_head">${
+                                   element.name
+                                 }</div>
+             			               <div class="clinic_card_left_image">
+                                   <img src="${
+                                     element?.picture?.fileUrl ??
+                                     "./no_clinic_image.svg"
+                                   }" alt="clinic_image" />
+
+                                  </div>
+             			               <div class="clinic_card_left_details">
+             			                 <div class="clinic_card_left_location">
+             			                   <div class="clinic_card_left_location_head">Location</div>
+             			                   <div class="clinic_card_left_head_desc">
+             			                     ${element.address.area},${
+            element.address.street
+          },${element.address.city},${element.address.state},${
+            element.address.pincode
+          }
+             			                   </div>
+             			                 </div>
+
+             			                 <div class="clinic_card_left_directions">
+             			                   <svg width="15" height="15" viewBox="0 0 18 18" fill="none">
+             			                     <path d="M0 0H19V19H0V0Z" fill="url(#pattern7)" />
+             			                     <defs>
+             			                       <pattern
+             			                         id="pattern7"
+             			                         patternContentUnits="objectBoundingBox"
+             			                         width="1"
+             			                         height="1"
+             			                       >
+             			                         <use
+             			                           xlink:href="#image0_1330_385"
+             			                           transform="scale(0.0111111)"
+             			                         />
+             			                       </pattern>
+             			                       <image
+             			                         id="image0_1330_385"
+             			                         width="90"
+             			                         height="90"
+             			                         xlink:href="data:image/png;base64,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"
+             			                       />
+             			                     </defs>
+             			                   </svg>
+             			                   Get Directions
+             			                 </div>
+             			               </div>
+             			               <div class="clinic_card_cta">
+                                   <button>Book Appointment</button>
+                                  </div>
+             			             </div>
+             			             <div class="clinic_card_right">
+             			               <div class="clinic_card_right_head">Visiting Hours</div>
+             			               <div class="clinic_visiting_hours">
+             			                 <div class="clinic_visiting_time">9:00 AM - 11:00 AM</div>
+             			                 <div class="clinic_visiting_days">
+             			                   <div>Mon</div>
+             			                   <div>Tue</div>
+             			                 </div>
+             			               </div>
+             			             </div>
+             			           </div>`;
+          document.getElementById("clinicCard_container").appendChild(node3);
+          var node4 = document.createElement("div");
+          node4.innerHTML = `<div class="footer_content">${index + 1}. ${
+            element.name
+          }</div>
+          <div class="footer_content">
+            <svg width="20" height="20" viewBox="0 0 25 25" fill="none">
+              <rect width="20" height="20" fill="url(#pattern5)" />
+              <defs>
+                <pattern
+                  id="pattern5"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    xlink:href="#image0_338_6049"
+                    transform="scale(0.0111111)"
+                  />
+                </pattern>
+                <image
+                  id="image0_338_6049"
+                  width="90"
+                  height="90"
+                  xlink:href="data:image/png;base64,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"
+                />
+              </defs>
+            </svg>
+            ${element?.address?.area}, ${element?.address?.street},${
+            element?.address?.city
+          },${element?.address?.state}-${element?.address?.pincode}
+          </div>`;
+          document.getElementById("clinic_names_container").appendChild(node4);
+        });
+
+        // FAQ Data
+        data.qnas.forEach(function (element) {
+          var node = document.createElement("div");
+          node.innerHTML = ` <button class="faq_desc">  ${element.question}
+             			         <svg id="toggle" width="25" height="25" viewBox="0 0 31 31" fill="none">
+             			           <rect
+             			             x="13.7812"
+             			             width="3.44444"
+             			             height="31"
+             			             rx="1.72222"
+             			             fill="#B1B1B1"
+             			           />
+             			           <rect
+             			             y="17.2227"
+             			             width="3.44444"
+             			             height="31"
+             			             rx="1.72222"
+             			             transform="rotate(-90 0 17.2227)"
+             			             fill="#B1B1B1"
+             			           />
+             			         </svg></button>
+             			         <div class="faq_note">
+             			           <p>
+             			        ${element.answer}
+             			           </p>
+             			         </div>`;
+          document.getElementById("faq_box").appendChild(node);
+        });
+
+        // Blogs Data
+        data.blogs.forEach(function (element) {
+          var node = document.createElement("div");
+          node.innerHTML = `<div class="blog_cards">
+             			                         <div class="blog_picture">
+             			                             <img
+             			         src=${
+                             element?.picture?.fileUrl ??
+                             "./Image_not_available.png"
+                           }
+             			         alt="blog_image"
+             			       />   
+             			                           </div>
+             			                         <div class="blog_title">${
+                                             element.title
+                                           }</div>
+             			                         <div class="blog_desc">
+             			                    ${
+                                        element.summary.length > 100
+                                          ? `${element.summary.substring(
+                                              0,
+                                              100
+                                            )}....`
+                                          : element.summary
+                                      }
+             			                         </div>
+             			                         <hr />
+             			                         <div class="blog_footer">
+             			                           <div class="blog_footer_left">
+             			                             Read More
+             			                           </div>
+             			                           <div class="blog_footer_right">
+             			                             <svg
+             			                               width="17"
+             			                               height="17"
+             			                               viewBox="0 0 17 17"
+             			                               fill="none"
+             			                             >
+             			                               <rect width="17" height="17" fill="url(#pattern0)" />
+             			                               <defs>
+             			                                 <pattern
+             			                                   id="pattern0"
+             			                                   patternContentUnits="objectBoundingBox"
+             			                                   width="1"
+             			                                   height="1"
+             			                                 >
+             			                                   <use
+             			                                     xlink:href="#image0_338_6090"
+             			                                     transform="scale(0.0111111)"
+             			                                   />
+             			                                 </pattern>
+             			                                 <image
+             			                                   id="image0_338_6090"
+             			                                   width="90"
+             			                                   height="90"
+             			                                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAAAXNSR0IArs4c6QAAA4hJREFUeF7t3M1qU0EUB/BzJ8UYjLgVK5SuFd1ZfIeuuyi41ZWRFtLpRilu9CahaHWjW8UnsO9gdxV9BD/2ftBYyIxcSSBi1JxD5sxM+s8yOXPPzG8ONzeHdgrCS0WgUMmCJARopSIANKCVBJTSoKIBrSSglAYVDWglAaU0qGhAKwkopUFFpw69s7Nzutls3iKi9cFgcMkYc0ZpzqppnHPfjTHviehVvV5/1mq1fkgmIKrosiwvEtG+MeaKJGmuY5xzb4lo1Vr7gbsGNnRVyY1G4+CkIY9gK+xGo7HCrWw2dK/Xu+O9f8Td0XmK9963tra2nnDWJIE+8N5f4ySZt1jn3Btr7XXOutjQZVl+NcY0OUnmLdY5981ae5azLjZ0t9v1kxK02232tTgTjRU7q/WycWaVOBYcN++s1gvo/8gDmluawnhAC+G4wwDNFRPGA1oIxx0GaK6YMB7QQjjuMEBzxYTxgBbCcYcBmismjE8OWriObIdxezsz+wmerZhw4oAWwnGHAZorJowHtBCOOwzQXDFhPKCFcNxhgOaKCeMBLYTjDssG2jl37L2/WxTFy+EibxDRfWPMqUmLTi0+J+hta205jlqWpTXGPPwLdFLx2UAvLCxc2NjY+DyO2ul0zhdF8dt7o89Ti88G2jm3aK39NA69u7u7OBgMJv4BYWrxOUH/cSvodDrbRVE8mPbWETM+J+hjIrpHRC+m/TJMKT4baO7jVGrxgFbaEUADWklAKQ0qGtBKAkppolV0ar2I0POJCZ1UL8I5F3Q+0aBT60WEnk806NR6EaHnExM6697FpFvNv3opMaGz7l1UX56cXko0aKWnqmTSAFppKwANaCUBpTSoaEArCSiliVbRoXsLoa/P3Z+Y0EF7C6F7F9lAh+4thL5+NtChewuhr58TdNa9jpygWb0Cbm8hdHw20NyJ5h4f7akjdzju/AHNFRPGB4fGcWy/duZLu90+x9kj9n/O9no9HDCoccBgt9ttEdFjzm7OW6xz7ra19ilnXeyK3tvbqx8dHVWHwF7lJJqj2MOlpaWVtbW16nF26hcburry8Fjj1ycQ+7BWq61ubm5+nFp4GCiCrsZWld3v929679eJ6PK8nldanUNKRO+qg7qXl5efcyt5tCFiaO6OnvR4QCtVAKABrSSglAYVDWglAaU0qGhAKwkopUFFA1pJQCkNKhrQSgJKaX4C1APhiLshkQsAAAAASUVORK5CYII="
+             			                                 />
+             			                               </defs>
+             			                             </svg>
+             			                             April 9th, 2022
+             			                           </div>
+             			                         </div>
+             			                       </div>`;
+          document.getElementById("blog_body").appendChild(node);
+        });
+        var node = document.getElementById("social_icons_box");
+        const tempSocial = `
+        <a target="_blank" href=${data?.contact?.url?.facebook}><svg viewBox="0 0 32 32" fill="none">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 16.2676C0 24.0474 5.65031 30.516 13.0392 31.8272V20.5266H9.12742V16.1802H13.0392V12.7031C13.0392 8.79133 15.56 6.61814 19.1242 6.61814C20.2541 6.61814 21.4712 6.792 22.6012 6.96585V10.9645H20.6019C18.6894 10.9645 18.2548 11.9207 18.2548 13.1377V16.1802H22.4274L21.732 20.5266H18.2548V31.8272C25.6438 30.516 31.294 24.0474 31.294 16.2676C31.294 7.6137 24.2529 0.533203 15.647 0.533203C7.04116 0.533203 0 7.6137 0 16.2676Z"
+                fill="#F8F8F8"
+              />
+            </svg> </a>
+           <a target="_blank" href=${data?.contact?.url?.instagram}>  <svg viewBox="0 0 33 32" fill="none">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.0965 0.627085C11.7655 0.550586 12.2975 0.533203 16.5474 0.533203C20.7981 0.533203 21.3293 0.551453 22.9974 0.627085C24.6638 0.702717 25.8018 0.967849 26.7971 1.35467C27.841 1.74771 28.7866 2.36353 29.5683 3.1593C30.3641 3.94084 30.9801 4.88657 31.373 5.93056C31.7597 6.92588 32.024 8.06377 32.1005 9.72929C32.1771 11.3983 32.1944 11.9303 32.1944 16.1802C32.1944 20.4301 32.1762 20.9621 32.1005 22.6312C32.0249 24.2966 31.7597 25.4346 31.373 26.4299C30.9731 27.4583 30.4375 28.3318 29.5683 29.2011C28.7868 29.997 27.841 30.6129 26.7971 31.0058C25.8018 31.3925 24.6638 31.6568 22.9984 31.7333C21.3293 31.8099 20.7973 31.8272 16.5474 31.8272C12.2975 31.8272 11.7655 31.809 10.0965 31.7333C8.43096 31.6577 7.29306 31.3925 6.29774 31.0058C5.26938 30.6059 4.39576 30.0704 3.52649 29.2011C2.73058 28.4196 2.11471 27.4738 1.72186 26.4299C1.33504 25.4346 1.07077 24.2966 0.994273 22.6312C0.917773 20.9621 0.900391 20.4309 0.900391 16.1802C0.900391 11.9295 0.918641 11.3983 0.994273 9.73018C1.0699 8.06377 1.33504 6.92588 1.72186 5.93056C2.1149 4.88664 2.73072 3.94095 3.52649 3.1593C4.30801 2.36339 5.25375 1.74753 6.29774 1.35467C7.29306 0.967849 8.43096 0.703585 10.0965 0.627085ZM22.8705 3.44355C21.2206 3.36878 20.7252 3.35227 16.5474 3.35227C12.3697 3.35227 11.8742 3.36878 10.2243 3.44355C8.69869 3.51309 7.87027 3.76778 7.31914 3.9825C6.58895 4.26588 6.06738 4.6049 5.51973 5.15254C4.97297 5.70019 4.63307 6.22176 4.34969 6.95195C4.13497 7.50308 3.88028 8.3315 3.81074 9.85709C3.73597 11.507 3.71946 12.0025 3.71946 16.1802C3.71946 20.358 3.73597 20.8534 3.81074 22.5033C3.88028 24.0289 4.13497 24.8573 4.34969 25.4085C4.60035 26.0882 5.00018 26.703 5.51973 27.2079C6.02456 27.7274 6.63945 28.1273 7.31914 28.3779C7.87027 28.5927 8.69869 28.8473 10.2243 28.9169C11.8742 28.9917 12.3688 29.0082 16.5474 29.0082C20.726 29.0082 21.2206 28.9917 22.8705 28.9169C24.3961 28.8473 25.2245 28.5927 25.7757 28.3779C26.5059 28.0946 27.0275 27.7556 27.5751 27.2079C28.0946 26.7031 28.4945 26.0882 28.7451 25.4085C28.9599 24.8573 29.2145 24.0289 29.2841 22.5033C29.3589 20.8534 29.3754 20.358 29.3754 16.1802C29.3754 12.0025 29.3589 11.507 29.2841 9.85709C29.2145 8.3315 28.9599 7.50308 28.7451 6.95195C28.4618 6.22176 28.1228 5.70019 27.5751 5.15254C27.0275 4.60578 26.5059 4.26588 25.7757 3.9825C25.2245 3.76778 24.3961 3.51309 22.8705 3.44355ZM14.5496 21.0036C15.183 21.2661 15.8618 21.4011 16.5474 21.4011C17.9322 21.4011 19.26 20.851 20.2391 19.8719C21.2183 18.8928 21.7684 17.5648 21.7684 16.1802C21.7684 14.7956 21.2183 13.4676 20.2391 12.4885C19.26 11.5094 17.9322 10.9593 16.5474 10.9593C15.8618 10.9593 15.183 11.0944 14.5496 11.3567C13.916 11.6191 13.3405 12.0037 12.8557 12.4885C12.3709 12.9733 11.9863 13.5488 11.724 14.1822C11.4616 14.8157 11.3266 15.4946 11.3266 16.1802C11.3266 16.8658 11.4616 17.5448 11.724 18.1782C11.9863 18.8116 12.3709 19.3871 12.8557 19.8719C13.3405 20.3567 13.916 20.7413 14.5496 21.0036ZM10.8605 10.4933C12.3688 8.98498 14.4144 8.13764 16.5474 8.13764C18.6805 8.13764 20.7262 8.98498 22.2344 10.4933C23.7426 12.0015 24.59 14.0472 24.59 16.1802C24.59 18.3132 23.7426 20.3588 22.2344 21.8672C20.7262 23.3754 18.6805 24.2228 16.5474 24.2228C14.4144 24.2228 12.3688 23.3754 10.8605 21.8672C9.35223 20.3588 8.50488 18.3132 8.50488 16.1802C8.50488 14.0472 9.35223 12.0015 10.8605 10.4933ZM26.3733 9.3359C26.7298 8.97936 26.9301 8.49581 26.9301 7.99161C26.9301 7.48739 26.7298 7.00384 26.3733 6.64732C26.0167 6.29079 25.5332 6.0905 25.0289 6.0905C24.5248 6.0905 24.0412 6.29079 23.6847 6.64732C23.3281 7.00384 23.1278 7.48739 23.1278 7.99161C23.1278 8.49581 23.3281 8.97936 23.6847 9.3359C24.0412 9.69242 24.5248 9.89272 25.0289 9.89272C25.5332 9.89272 26.0167 9.69242 26.3733 9.3359Z"
+                fill="#F8F8F8"
+              />  </svg
+            ></a>
+           <a target="_blank" href=${data?.contact?.url?.twitter}> <svg viewBox="0 0 33 33" fill="none">
+              <path
+                d="M13.8754 31.9668H13.7475C11.1717 31.9442 8.63318 31.3492 6.31569 30.2247C5.8894 30.0244 5.5384 29.693 5.31408 29.2789C5.08976 28.8647 5.0039 28.3897 5.06907 27.9232C5.13994 27.4536 5.35737 27.0184 5.69031 26.6797C6.02326 26.341 6.45469 26.1162 6.92302 26.0373C8.35922 25.8457 9.74086 25.3616 10.9825 24.6149C8.82678 22.9294 7.16716 20.6921 6.17955 18.1401C5.19195 15.5881 4.91316 12.8164 5.37273 10.1188C5.43505 9.69156 5.61881 9.29118 5.90215 8.96533C6.18549 8.63949 6.55648 8.40191 6.97097 8.28087C7.37423 8.15423 7.80581 8.14882 8.21211 8.26531C8.61842 8.3818 8.98156 8.61507 9.25645 8.93615C10.1898 10.1601 11.3628 11.181 12.7037 11.9366C14.0446 12.6923 15.5255 13.1668 17.0559 13.3313C17.129 11.4483 17.9381 9.66929 19.3094 8.37677C19.9941 7.72113 20.8024 7.20831 21.6873 6.8682C22.5721 6.52809 23.5158 6.36749 24.4634 6.39575C25.4109 6.42402 26.3434 6.64058 27.2064 7.03283C28.0694 7.42507 28.8458 7.98515 29.4901 8.68043C29.658 8.82886 29.8666 8.92345 30.0889 8.95194C30.3112 8.98044 30.5369 8.94153 30.7368 8.84026C31.1178 8.66053 31.5422 8.59287 31.9602 8.64518C32.3783 8.69749 32.7729 8.86761 33.0979 9.13568C33.423 9.40376 33.6651 9.75874 33.796 10.1592C33.9269 10.5597 33.9413 10.9891 33.8374 11.3974C33.4687 12.9159 32.7703 14.3347 31.7916 15.5529C31.5759 20.0994 29.5714 24.3764 26.2153 27.4511C22.8591 30.5259 18.4234 32.149 13.8754 31.9668ZM13.8754 28.7703H14.0032C15.8614 28.8342 17.7139 28.5286 19.4531 27.8712C21.1923 27.2139 22.7838 26.2178 24.1351 24.9407C25.4865 23.6637 26.571 22.1311 27.3256 20.4318C28.0802 18.7325 28.49 16.9003 28.5312 15.0414C28.5576 14.532 28.7677 14.0494 29.1225 13.6829C29.5124 13.1895 29.8448 12.6533 30.1135 12.0847C29.5377 12.0858 28.9682 11.9653 28.4421 11.7312C27.9161 11.4971 27.4454 11.1547 27.0608 10.7262C26.691 10.3595 26.2517 10.0702 25.7687 9.87538C25.2857 9.68053 24.7687 9.584 24.2479 9.59143C23.7219 9.57783 23.1985 9.66825 22.7075 9.85749C22.2166 10.0467 21.7678 10.3311 21.3871 10.6942C20.8734 11.1817 20.4967 11.7955 20.2948 12.4743C20.0928 13.153 20.0727 13.8729 20.2363 14.5619L20.6519 16.3839L18.7819 16.5118C16.8658 16.668 14.9386 16.4059 13.1338 15.7436C11.329 15.0813 9.68971 14.0346 8.32947 12.676C8.27114 14.7799 8.79744 16.8588 9.84987 18.6815C10.9023 20.5042 12.4396 21.9993 14.2909 23.0006L15.8092 23.8637L14.8023 25.3021C13.7134 26.7302 12.2215 27.799 10.5191 28.3707C11.6112 28.6444 12.7335 28.7787 13.8594 28.7703H13.8754Z"
+                fill="#F8F8F8"
+              />
+            </svg></a>
+         <a target="_blank" href=${data?.contact?.url?.linkedin}>   <svg viewBox="0 0 33 32" fill="none">
+              <path
+                d="M27.3666 27.2026H22.738V19.9394C22.738 18.2075 22.7018 15.9817 20.3176 15.9817C17.9041 15.9817 17.5364 17.8603 17.5364 19.8113V27.2016H12.9019V12.2675H17.3535V14.3045H17.4132C18.0351 13.1281 19.548 11.891 21.8051 11.891C26.5002 11.891 27.3715 14.9822 27.3715 19.0016V27.2016L27.3666 27.2026ZM7.66604 10.2265C6.17273 10.2265 4.97573 9.01877 4.97573 7.53133C4.97573 6.04878 6.17762 4.84298 7.66604 4.84298C9.15446 4.84298 10.3603 6.04878 10.3603 7.53133C10.3603 9.01877 9.15446 10.2265 7.66604 10.2265ZM9.98767 27.2026H5.34344V12.2685H9.98767V27.2026ZM29.6902 0.533203H3.01594C1.74169 0.533203 0.708008 1.54146 0.708008 2.78931V29.5721C0.708008 30.82 1.74169 31.8282 3.01594 31.8282H29.6853C30.9576 31.8282 32.002 30.82 32.002 29.5721V2.78931C32.002 1.54146 30.9576 0.533203 29.6853 0.533203L29.6902 0.533203Z"
+                fill="#F8F8F8"
+              />
+            </svg></a>`;
+        node.innerHTML = tempSocial;
+
+        // Testimonial Carousel
+        let i = 0;
+        let j = data.testimonials.length;
+        let testimonialContainer = document.getElementById(
+          "testimonial-container"
+        );
+        let nextBtn = document.getElementById("next");
+        let prevBtn = document.getElementById("prev");
+        nextBtn.addEventListener("click", () => {
+          i = (j + i + 1) % j;
+          console.log(i);
+          displayTestimonial();
+        });
+        prevBtn.addEventListener("click", () => {
+          i = (j + i - 1) % j;
+          displayTestimonial();
+        });
+        let displayTestimonial = () => {
+          console.log("karan", i);
+          testimonialContainer.innerHTML = `
+             			           <h3>${data.testimonials[i].content}</h3>
+             			           <p>-${data.testimonials[i].name}</p>
+             			           `;
+        };
+        // window.onload = displayTestimonial;
+        displayTestimonial();
+
+        function tabify(element) {
+          const header = element.querySelector(".gator-tabs-header");
+          const content = element.querySelector(".gator-tabs");
+          const tab_headers = [...header.children];
+          const tab_contents = [...content.children];
+          tab_contents.forEach((x) => (x.style.display = "none"));
+          let current_tab_index = -1;
+
+          function setTab(index) {
+            if (current_tab_index > -1) {
+              tab_headers[current_tab_index].style.fontWeight = 400;
+              tab_contents[current_tab_index].style.display = "none";
+              tab_headers[current_tab_index].classList.remove(
+                "treatment_header_box"
+              );
+            }
+            tab_headers[index].className = "treatment_header_box";
+            tab_contents[index].style.display = "flex";
+            current_tab_index = index;
+          }
+
+          default_tab_index = tab_headers.findIndex((x) => {
+            return [...x.classList].indexOf("default-gator-tab") > -1;
+          });
+
+          default_tab_index = default_tab_index === -1 ? 0 : default_tab_index;
+          setTab(default_tab_index);
+          tab_headers.forEach((x, i) => (x.onclick = (event) => setTab(i)));
+        }
+
+        // this is where the magic happens!
+        [...document.querySelectorAll(".gator-tabs-container")].forEach((x) =>
+          tabify(x)
+        );
+
+        // Show or Hide FAQ Tab
+        var acc = document.getElementsByClassName("faq_desc");
+        var x;
+        for (x = 0; x < acc.length; x++) {
+          acc[x].addEventListener("click", function () {
+            this.classList.toggle("open");
+            var faq_note = this.nextElementSibling;
+            if (faq_note.style.display === "block") {
+              faq_note.style.display = "none";
+            } else {
+              faq_note.style.display = "block";
+            }
+          });
+        }
+      };
+    </script>
+  </body>
+</html>

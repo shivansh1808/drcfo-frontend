@@ -1,0 +1,199 @@
+.PrescriptionPDF_container {
+  background: #f6f6f7;
+  height: max-content;
+}
+.PrescriptionPDF_navbar {
+  background: #ecf6ff;
+  padding: 30px 0;
+}
+
+.PrescriptionPDF_navbar_text {
+  width: 90%;
+  margin: auto;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.PrescriptionPDF_navbar_text span {
+  cursor: pointer;
+}
+.PrescriptionPDF_navbar_text svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.PrescriptionPDF_container_header {
+  text-align: center;
+  margin-bottom: 0;
+  padding-top: 40px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #000000;
+}
+.PrescriptionPDF_box {
+  width: 70%;
+  margin: auto;
+  background-color: #fff;
+}
+.prescription_clinic_box {
+  background: #e6ebed;
+  padding: 20px;
+}
+.prescription_clinic_inner_box {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.prescription_clinic_inner_box h3 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+.prescription_clinic_inner_box h4 {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+.prescription_clinic_inner_box h5 {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #000000;
+}
+.prescription_patient_container {
+  border-bottom: 1px solid #b7b7b7;
+}
+.prescription_patient_box {
+  width: 90%;
+  margin: auto;
+  padding: 30px 20px;
+}
+.prescription_patient_box h2 {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #000000;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.prescription_patient_box_name {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #000000;
+  margin-bottom: 1.2rem;
+}
+.patient_prescription_content {
+  border-bottom: 1px solid #b7b7b7;
+  /* margin-bottom: 20px; */
+}
+.prescription_item {
+  width: 90%;
+  margin: auto;
+  padding: 30px 20px;
+}
+.prescription_item h1 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #000000;
+  margin-bottom: 1.2rem;
+}
+.prescription_item p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+}
+.prescription_test_container {
+  border-bottom: 1px solid #b7b7b7;
+}
+.prescription_test_item {
+  width: 90%;
+  margin: auto;
+  padding: 30px 20px;
+}
+.prescription_test_item h1 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #000000;
+  margin-bottom: 1.2rem;
+}
+.prescription_test_item ol li {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.prescription_drugs_table {
+  border-bottom: 1px solid #b7b7b7;
+  padding: 20px 0;
+}
+.prescription_drugs_table table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+}
+
+.prescription_drugs_table td,
+.prescription_drugs_table th {
+  border: 1px solid #fff;
+  text-align: left;
+  padding: 20px 8px;
+  font-size: 14px;
+}
+.prescription_drugs_table thead tr th {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #000000;
+}
+.prescription_drugs_table tr:nth-child(even) {
+  background-color: #fff;
+}
+.prescription_drugs_table thead tr th:first-child {
+  width: 30%;
+}
+.prescription_follow_update {
+  border-bottom: 1px solid #b7b7b7;
+}
+.prescription_follow_update_wrapper {
+  width: 90%;
+  margin: auto;
+  padding: 30px 20px 50px 20px;
+}
+
+.prescription_follow_update_wrapper h1 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #000000;
+  margin-bottom: 1.2rem;
+}
+.prescription_follow_update_wrapper p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+}
+.prescription_pdf_download_container {
+  width: 70%;
+  margin: 3rem auto 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+}
+.prescription_pdf_download_container button {
+  border-radius: 4px;
+  border: none;
+  padding: 6px 0;
+  width: 200px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.prescription_pdf_edit_cta {
+  background: #e6ebff;
+  color: #194af5 !important;
+}
+.prescription_pdf_continue_cta {
+  background: #194af5;
+}
+.prescription_pdf_download_cta {
+  background: #194af5;
+}

@@ -1,0 +1,45 @@
+.WebGenShareBox {
+  background: #f6f6f7;
+  border-radius: 10px;
+  padding: 1em;
+  margin-top: 2em;
+}
+.WebGenShareBox_input {
+  display: flex;
+}
+.WebGenShareBox_input input {
+  width: 60%;
+  font-weight: 500;
+  font-size: 0.9em;
+  color: #757575;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+}
+
+.web_gen_link_share_cta {
+  background: #194af5;
+  border: none;
+  color: #fff;
+  padding: 6px 0;
+  width: 40%;
+}
+.WebGenShareBox h6 {
+  width: 60%;
+  text-align: justify;
+  margin: 2em 0 1em 0;
+  font-weight: 500;
+  font-size: 0.9em;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #5c5c5c;
+  text-shadow: 0px 1.17442px 5.87209px rgba(255, 255, 255, 0.25);
+}
+.web_gen_upgrade {
+  background: linear-gradient(252.17deg, #b0e7f9 -12.2%, #5f64eb 132.39%);
+  border-radius: 4px;
+  color: #fff;
+  padding: 0.4em 3em;
+  border: none;
+  font-weight: 500;
+}

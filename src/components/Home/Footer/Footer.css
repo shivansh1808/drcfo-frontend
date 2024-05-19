@@ -1,0 +1,124 @@
+.footer_wrapper {
+  background: #ecf6ff;
+  width: 100%;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-rows: max-content;
+  gap: 2em;
+  position: relative;
+}
+.footer_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180px;
+  /* background-color: red; */
+}
+.footer_bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+}
+.footer_col_1 {
+  width: 80%;
+  margin: auto;
+}
+.footer_head {
+  position: relative;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  max-width: 82%;
+  color: #000000;
+}
+.footer_head span {
+  color: #194af5;
+}
+.footer_col_1 button {
+  position: relative;
+  background: #194af5;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  border: none;
+  width: 200px;
+  padding: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 10px;
+}
+.footer_col_1 h5 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #888686;
+}
+.footer_col_1 p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  color: #323030;
+}
+.footer_contact {
+  width: 70%;
+}
+.footer_col_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer_col_2 p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  color: #4d4d4d;
+}
+.social_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.social_buttons img {
+  margin: 0 20px;
+}
+.footer_col_3 {
+  /* background-color: cadetblue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer_col_3 img {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.footer_col_3 h5 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 33px;
+  color: #2e2e2e;
+  cursor: pointer;
+}

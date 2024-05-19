@@ -1,0 +1,131 @@
+.home_nav {
+  height: 100px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ecf6ff;
+}
+
+.home_logo {
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
+}
+.home_logo img {
+  max-width: 80%;
+  margin-right: 15px;
+}
+.home_logo p {
+  margin-bottom: 0px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #232526;
+}
+.menu_icon {
+  display: none;
+  cursor: pointer;
+}
+.menu_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu_box li {
+  position: relative;
+}
+.nav_menu {
+  list-style-type: none;
+  display: grid;
+  justify-content: end;
+  width: 70vw;
+  margin-top: 11px;
+  position: relative;
+}
+
+.nav_link {
+  color: #000;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  display: inline-block;
+  position: relative;
+}
+.nav_link:hover {
+  color: #000;
+}
+.nav_link_active::after {
+  bottom: 0;
+  content: "";
+  left: 50%;
+  /* display: block; */
+  background: #194af5;
+  border-radius: 2px;
+  height: 4px;
+  position: absolute;
+  width: 50%;
+  transform: translate(-50%, 0);
+}
+.menu_box li:last-child .nav_link {
+  background: #194af5;
+  border-radius: 5px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff !important;
+}
+.join_now_cta {
+  background: #194af5;
+  border-radius: 5px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  padding: 0.5rem 1rem;
+  color: #fff !important;
+  cursor: pointer;
+}
+@media screen and (max-width: 960px) {
+  .menu_box {
+    display: block;
+  }
+  .nav_menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  .nav_menu.active {
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+  }
+  .nav_link {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+  .nav-link:hover {
+    color: #000;
+  }
+  .menu_icon {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    transform: translate(-100%, 64%);
+  }
+  .home_logo {
+    margin-left: 0px;
+  }
+}

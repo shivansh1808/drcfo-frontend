@@ -1,0 +1,74 @@
+.SignUpSection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+  margin: 8em 0;
+}
+.sign_up_left {
+  background-image: url("../../../assets/images/home/ss_bg.png");
+  background-repeat: no-repeat;
+  background-size: 50em;
+  background-position: center;
+  position: relative;
+  min-height: 600px;
+}
+.signUp_image_container {
+  margin-left: 40px;
+}
+.sign_up_left img {
+  max-width: 90%;
+}
+.SignUpSection_bg1 {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.SignUpSection_bg2 {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.signup_right {
+  position: relative;
+}
+.signup_right_wrapper h1 {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 77px;
+  color: #232526;
+  text-align: center;
+}
+.signup_right_wrapper {
+  position: relative;
+  left: -12%;
+  max-width: 800px;
+  text-align: center;
+}
+.signup_right_wrapper p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+.signup_right_wrapper button {
+  width: 200px;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  /* identical to box height */
+  background: #194af5;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  text-align: center;
+  padding: 7px;
+  color: #ffffff;
+  margin: 30px 0;
+}

@@ -1,0 +1,31 @@
+.web_clinic_availibility_card {
+  margin: 2vw;
+  padding: 2vw;
+  padding-bottom: 3vw;
+  position: relative;
+  background-color: #fff;
+  border-radius: 0.8rem;
+}
+.web_clinic_availibility_card_header {
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #686868;
+  margin-bottom: 20px;
+}
+.web_date_select_heading {
+  width: 60%;
+  margin: auto;
+  font-weight: 500;
+  font-size: 1.2vw;
+  line-height: 29px;
+  color: #232526;
+}
+.web_slot_num_header {
+  margin: 50px 0 0 0;
+  font-weight: 500;
+  font-size: 1.2vw;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #232526;
+}

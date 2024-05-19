@@ -1,0 +1,144 @@
+.auth_screen {
+  background: linear-gradient(
+    /* linear, left top, right bottom, */ /* 46.91deg,  */ 120deg,
+    #eef7ff 8.85%,
+    rgba(238, 247, 255, 0) 40%,
+    /* 66.72%, */ rgba(238, 247, 255, 0) -100% /* 88.22% */
+  );
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.auth_form_logo {
+  position: absolute;
+  top: 6%;
+  left: 5vw;
+  max-width: 8vw;
+}
+.login_content {
+  display: flex;
+  margin: 15vh 0 10vh 6vw;
+  width: 94vw;
+}
+.otp_login_left {
+  width: 45%;
+  margin-right: 5vw;
+  margin-top: 15vh;
+}
+.login_left {
+  width: 45%;
+  margin-right: 5vw;
+  margin-top: 19vh;
+}
+
+.login_banner h6 {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #b7b7b7;
+}
+
+.login_number_input {
+  background: #ffffff;
+  border: 1px solid #e6ebed;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 50px;
+}
+.login_number_input::placeholder {
+  color: #7d818b;
+  font-size: 14px;
+}
+
+.auth_form h1 {
+  font-weight: 700;
+  font-size: 1.8vw;
+  line-height: 2.1vw;
+  letter-spacing: 0.04em;
+  color: #000000;
+  margin-bottom: 3.2vh;
+}
+.auth_form p {
+  font-weight: 500;
+  font-size: 1.2vw;
+  line-height: 1.3vw;
+  letter-spacing: 0.04em;
+  color: #b7b7b7;
+  margin-bottom: 4.5vh;
+}
+.auth_form span {
+  font-size: 1vw;
+}
+
+.auth_change_details {
+  margin-bottom: 2.5vh;
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+.auth_num {
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+.auth_otp_timer {
+  display: flex;
+  align-items: center;
+  margin-right: 1vw;
+  color: #7d818b;
+  font-size: 1.1vw;
+  font-weight: 500;
+}
+.auth_otp_timer img {
+  height: fit-content;
+  margin-right: 0.5vw;
+}
+.auth_change_num {
+  font-size: 0.9vw;
+  font-weight: 600;
+  color: #194af5;
+}
+.auth_resend {
+  font-size: 1.1vw;
+  font-weight: 500;
+  color: #194af5;
+}
+/* .login_btn p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  letter-spacing: 0.04em;
+  color: #b7b7b7;
+  margin-top: 10px;
+}
+.login_btn button {
+  background: #194af5;
+  border: 1px solid #e6ebed;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+  width: 80%;
+  padding: 8px;
+}
+
+.login_btn button:active {
+  transform: scale(0.99);
+} */
+.login_link {
+  font-weight: 500;
+  font-size: 1.1vw;
+  line-height: 27px;
+  letter-spacing: 0.04em;
+  color: #194af5;
+  text-decoration: none;
+}
+@media (max-width: 1200px) {
+  .auth_form span {
+    font-size: 1.3vw;
+  }
+}

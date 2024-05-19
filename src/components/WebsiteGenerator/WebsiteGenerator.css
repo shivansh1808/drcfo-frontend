@@ -1,0 +1,13 @@
+.WebsiteGenerator_screen {
+  background: #fff;
+  border-radius: 8px;
+  width: 95%;
+  margin: 20px auto;
+}
+.webScreen_header {
+  font-weight: 600;
+  font-size: 1.5em;
+  padding: 20px 0;
+  text-align: center;
+  color: #232526;
+}

@@ -1,0 +1,57 @@
+.module_container {
+  margin: 150px 0 0 0;
+  position: relative;
+  /* overflow: hidden; */
+}
+.module_bg {
+  position: absolute;
+  right: 0;
+  bottom: 5%;
+  width: 300px;
+}
+.module_header h1 {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 104px;
+  text-align: center;
+  color: #545b74;
+  margin-bottom: 50px;
+}
+.module_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+.module_image {
+  position: relative;
+  /* background-color: red; */
+}
+.module_image img {
+  max-width: 100%;
+  margin: 100px auto;
+}
+.module {
+  position: absolute;
+  max-width: 250px;
+}
+.module h3 {
+  font-weight: 600;
+  font-size: 22px;
+  text-align: justify;
+  color: #545b74;
+}
+.module p {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: justify;
+  color: #000000;
+}
+.module_1 {
+  top: 1%;
+  left: -20%;
+}
+.module_2 {
+  bottom: 10%;
+  right: -28%;
+}

@@ -1,0 +1,73 @@
+.web_dash {
+  width: 95%;
+  background: #ffffff;
+  margin: 2vw auto;
+  padding: 2vw;
+  display: flex;
+  border-radius: 0.5rem;
+}
+.web_dash_head {
+  width: 60%;
+}
+
+.web_dash_desc {
+  margin-top: 3vw;
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+.web_dash_title {
+  color: #232526;
+  font-size: 2vw;
+  font-weight: 700;
+  line-height: 40px;
+}
+.web_dash_features {
+  margin-top: 3.5vw;
+  width: 40%;
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+.web_dash_feature_list {
+  margin-top: 0.9vw;
+  display: grid;
+  grid-template-columns: 100% 100%;
+  column-gap: 10%;
+  row-gap: 0.5vw;
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+.web_dash_feature_list div {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 0.4vw 1vw;
+}
+.web_dash_footer {
+  margin-top: 2.5vw;
+  width: fit-content;
+}
+.web_dash_footer_head {
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+.web_dash_footer_btn {
+  margin-top: 1vw;
+  width: 100%;
+  background-color: #194af5;
+  padding: 0.4vw 0vw;
+  font-size: 1.1vw;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 0.2rem;
+}
+.web_dash_banner {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: fit-content;
+}
+.web_dash_banner img {
+  margin: auto;
+  width: 70%;
+}

@@ -1,0 +1,78 @@
+.consultation_carousel {
+  background: #fff;
+  padding: 20px;
+  margin: 1vw auto;
+  width: 80%;
+  height: auto;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+.consultation_carousel h1 {
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 39px;
+  text-align: center;
+  color: #232526;
+  margin-bottom: 20px;
+}
+.consultation_carousel p {
+  width: 60%;
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+  max-width: 500px;
+  margin: auto;
+}
+.carousel_wrapper {
+  margin: 4vw 0 10px 0;
+  /* max-height: 10vw; */
+}
+.card_car_1 {
+  margin-top: 20px;
+}
+.card_car p {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.card_car_1 p {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.carousel_wrapper img {
+  max-width: 200px;
+}
+.carousel .control-dots .dot {
+  background: #e6ebff !important;
+}
+.carousel .control-dots .dot.selected,
+.carousel .control-dots .dot:hover {
+  background: #194af5 !important;
+}
+.start_consulting_cta button {
+  background-color: #194af5;
+  border: 4px;
+  border: none;
+  width: 400px;
+  padding: 6px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.terms {
+  text-align: center;
+  margin: 1em 0;
+}
+.terms input {
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+.terms label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}

@@ -1,0 +1,95 @@
+.paradigm_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  margin: 50px 0;
+}
+.card1 {
+  margin-left: -100px;
+  /* background-color: red; */
+}
+.paradigm_container {
+  position: relative;
+  overflow: hidden;
+}
+.paradigm_container_bg3 {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 50%;
+}
+.pillus1 {
+  position: absolute;
+  top: -4.5%;
+  left: 10%;
+  width: 200px;
+}
+.pillus2 {
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  width: 120px;
+}
+.pillus3 {
+  position: absolute;
+  top: 28%;
+  left: 0%;
+  width: 80px;
+}
+.pillus4 {
+  position: absolute;
+  bottom: 3%;
+  left: 0%;
+  width: 120px;
+}
+.pillus5 {
+  position: absolute;
+  bottom: 0%;
+  right: 5%;
+  width: 120px;
+}
+.paradigm_header {
+  position: relative;
+}
+.paradigm_header h1 {
+  padding-left: 100px;
+  padding-top: 100px;
+  font-weight: 700;
+  font-size: 60px;
+  max-width: 800px;
+  color: #545b74;
+  margin-bottom: 50px;
+}
+
+.paradigm_image1 {
+  width: 500px;
+}
+.paradigm_image2 {
+  width: 400px;
+}
+.paradigm_image3 {
+  width: 400px;
+  margin-right: 100px;
+}
+.paradigm_card_content {
+  max-width: 400px;
+}
+.content_1 {
+  margin-left: -50px;
+}
+.paradigm_card_content h6 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 48px;
+  color: #232526;
+}
+.paradigm_card_content p {
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+.paradigm_icons {
+  width: 7%;
+  margin-right: 5px;
+}

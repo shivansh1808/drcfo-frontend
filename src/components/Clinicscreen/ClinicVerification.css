@@ -1,0 +1,62 @@
+* {
+  font-family: "Inter";
+  font-style: normal;
+}
+
+.v-text {
+  font-weight: 600;
+  font-size: 1.5vw;
+  color: #000000;
+  text-align: center;
+}
+
+.v-text1 {
+  font-weight: 500;
+  font-size: 1.3vw;
+  color: #686868;
+  text-align: center;
+}
+
+.v-input {
+  display: inline-block;
+  border: 1px solid #e6ebed;
+  background: url("../../assets/images/login_user.png") no-repeat 2px;
+  height: auto;
+  width: 60%;
+  margin: 0 auto;
+  padding: 1vw;
+  padding-left: 8%;
+  background-position: 8px 11.5px;
+  background-size: 6%;
+  margin-top: 2vw;
+  outline: none;
+}
+
+.v-input::placeholder {
+  font-weight: 400;
+  font-size: 1.1vw;
+  letter-spacing: 0.02em;
+  color: #7d818b;
+}
+
+.v-btn {
+  margin: 0 auto;
+  padding: 1vw;
+  margin-top: 3vw;
+  display: inline-block;
+  background-color: #194af5;
+  text-transform: capitalize;
+  border: 1px solid #e6ebed;
+  border-radius: 4px;
+  color: white;
+  height: auto;
+  width: 60%;
+}
+.DeleteModal {
+  padding: 30px 20px;
+}
+.DeleteModal_btn {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}

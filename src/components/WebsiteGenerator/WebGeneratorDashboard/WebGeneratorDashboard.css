@@ -1,0 +1,14 @@
+.WebGeneratorDashboard {
+  width: 95%;
+  background: #ffffff;
+  margin: 2vw auto;
+  padding: 2vw;
+  border-radius: 0.5rem;
+}
+.web_gen_dashboard_other {
+  margin: 2em 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: max-content;
+  gap: 2em;
+}

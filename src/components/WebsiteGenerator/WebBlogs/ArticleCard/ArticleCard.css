@@ -1,0 +1,54 @@
+.ArticleCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-height: 300px;
+}
+
+.ArticleCard img {
+  max-width: 280px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  max-height: 180px;
+}
+.ArticleCard p {
+  max-width: 250px;
+  margin: auto;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #717171;
+}
+
+.ArticleCard_skeleton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  max-height: 280px;
+  position: relative;
+}
+.ArticleCard_skeleton img {
+  max-width: 280px;
+  /* margin-bottom: px; */
+}
+.ArticleCard_skeleton p {
+  max-width: 250px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #66b48b;
+}
+.ArticleCard_skeleton span {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  color: #fff;
+}

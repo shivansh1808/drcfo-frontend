@@ -1,0 +1,325 @@
+.bill {
+  background: #f6f6f7;
+}
+
+.bills_wrapper {
+  background-color: #fff;
+  width: 80%;
+  margin: 0 auto;
+}
+.bills_header_text {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.patient_bill_card {
+  max-width: 500px;
+}
+.patient_bills_header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.bill_booking_cta {
+  background: #e6ebff;
+  border-radius: 2px;
+  padding: 8px;
+  width: 130px;
+  font-size: 13px;
+  border: none;
+  color: #194af5;
+}
+.bill_share_cta {
+  background: transparent;
+  border-radius: 2px;
+  padding: 8px;
+  width: 150px;
+  font-size: 13px;
+  border: 1px solid #519000;
+  color: #519000;
+}
+.bill_view_cta {
+  background: #e0ffb9;
+  border-radius: 2px;
+  padding: 8px;
+  width: 130px;
+  font-size: 13px;
+  border: none;
+  color: #519000;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.divider {
+  border-top: 1px solid #e6ebed;
+  margin: 30px;
+}
+
+.services_box {
+  margin-bottom: 30px;
+}
+.services_box ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  max-width: 500px;
+}
+.services_box li {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px 0;
+  align-items: center;
+}
+.services_box li h4 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #232526;
+  margin-right: 30px;
+  width: 200px;
+  margin-bottom: 0px;
+}
+.services_box li p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #232526;
+  margin-bottom: 0px;
+  margin: 0 30px;
+  width: 100px;
+  text-align: center;
+}
+
+.bills_edit_cta {
+  font-weight: 500;
+  border: none;
+  font-size: 14px;
+  color: #194af5;
+  background: #e6ebff;
+  border-radius: 3.12088px;
+  margin-right: 30px;
+  padding: 5px;
+  width: 80px;
+}
+.bills_delete_cta {
+  font-weight: 500;
+  font-size: 14px;
+  color: #ff5555;
+  padding: 5px;
+  width: 80px;
+  border: none;
+  background: #ffe3e3;
+  border-radius: 3.11394px;
+  padding: 5px;
+  width: 80px;
+}
+.services_box h5 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #232526;
+  margin-bottom: 20px;
+}
+.add_service_box h3 {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  color: #232526;
+  margin-right: 40px;
+}
+.add_service_box input::placeholder {
+  font-size: 14px;
+}
+.service_input {
+  margin: 0 20px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #a4a4a4;
+}
+.service_input2 {
+  margin: 0 20px;
+  padding: 8px;
+  border-radius: 4px;
+  width: 150px;
+  border: 1px solid #a4a4a4;
+}
+.add_service_box {
+  margin-top: 30px;
+}
+.service_save_btn {
+  background: #e6ebff;
+  border-radius: 4px;
+  border: none;
+  padding: 5px 30px;
+  color: #194af5;
+  font-weight: 500;
+  margin-right: 100px;
+  margin-top: 30px;
+}
+.amount_box {
+  margin-bottom: 30px;
+}
+.amount_content div {
+  max-width: 250px;
+}
+.amount_content p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #232526;
+}
+.amount_content span {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #232526;
+}
+.total_box {
+  border-top: 1px dashed #b7b7b7;
+  padding-top: 10px;
+}
+.invoice_title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #232526;
+  margin-bottom: 30px;
+}
+.invoice {
+  border: 1px solid #c7c7c7;
+  border-radius: 12px;
+  width: 70%;
+  padding: 20px 10px 10px 10px;
+}
+.invoice thead tr td {
+  font-weight: 600;
+}
+.invoice td,
+th {
+  text-align: left;
+  padding: 10px 0;
+  padding-left: 20px;
+  border: none;
+  width: 200px;
+  color: #666666;
+}
+.invoice td:first-child,
+th:first-child {
+  width: 150px;
+}
+
+.bills_grand_total {
+  text-align: right;
+  line-height: 30px;
+}
+.bills_payment_status h1 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #232526;
+}
+.bills_paid_button {
+  background: #ffffff;
+  border: 1px solid #5ade44;
+  border-radius: 3px;
+  color: #5ade44;
+  font-weight: 500;
+  font-size: 13px;
+  width: 100px;
+  padding: 7px;
+}
+.bills_unpaid_button {
+  background: #ffffff;
+  border: 1px solid #ee9696;
+  border-radius: 3px;
+  color: #de4444;
+  font-weight: 500;
+  font-size: 13px;
+  width: 100px;
+  padding: 7px;
+}
+.bills_partial_button {
+  background: #ffffff;
+  border: 1px solid #ee9696;
+  border-radius: 3px;
+  color: #de4444;
+  font-weight: 500;
+  font-size: 13px;
+  width: 100px;
+  padding: 7px;
+}
+.pay_wrapper h1 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #232526;
+  margin-bottom: 30px;
+}
+.pay_type_selector {
+  display: flex;
+}
+.pay_type_selector p {
+  margin-right: 30px;
+}
+.pay_type_selector .payment_radio_input:checked,
+.payment_radio_input:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+.pay_type_selector .payment_radio_input:checked + label,
+.payment_radio_input:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  vertical-align: middle;
+  display: inline-block;
+  color: #666;
+  margin-right: 30px;
+  font-weight: 500;
+  font-size: 1em;
+  color: #232526;
+}
+.pay_type_selector .payment_radio_input:checked + label:before,
+.payment_radio_input:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+.pay_type_selector .payment_radio_input:checked + label:after,
+.payment_radio_input:not(:checked) + label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #194af5;
+  position: absolute;
+  top: 25%;
+  left: 3px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.pay_type_selector .payment_radio_input:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.pay_type_selector .payment_radio_input:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.bill_submit {
+  padding: 7px;
+  width: 250px;
+  background: #194af5;
+  border-radius: 4px;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 50px;
+}
